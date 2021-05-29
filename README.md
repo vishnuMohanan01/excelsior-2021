@@ -103,3 +103,31 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+
+
+# 🔥 Excelsior'21
+
+## 🤔 Where to make different routes ?
+
+All .js files inside **src/pages** directory will be processed as different routes.
+
+
+> However we don't need any, other than the index route as of now.
+
+## 🤔 Is there any conventions to follow, while developing this as a team ?
+
+Yes, there are a bunch. 
+
+1. Each and every developer volunteer will be assigned a React component to develop.
+   A component will be a vertical section of some page.
+2. Components should be created inside a folder in the **src/components** dir (preferably, the component name as the folder name).
+3. Different component folders should be created for each component you are assigned.
+4. Each of those component folders should export a React Component, for use inside any of the routes.
+5. To view your component during development, import and place that component inside the layout container of the page (Below the SEO Component, which is already placed).
+   > For example: If you're developing for the index route.
+   > 
+   > Place the component inside the layout container in the **src/pages/index.js** (Below the SEO Component, which is already placed).
+6. All the module.css files should also be placed inside your component's folder.   
+7. However, the developers are expected to remove all the React components which they placed in the **src/pages/index.js** before PR.
+
