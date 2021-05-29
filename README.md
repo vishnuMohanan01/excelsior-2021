@@ -125,9 +125,13 @@ Yes, there are a bunch.
 3. Different component folders should be created for each component you are assigned.
 4. Each of those component folders should export a React Component, for use inside any of the routes.
 5. To view your component during development, import and place that component inside the layout container of the page (Below the SEO Component, which is already placed).
+
    > For example: If you're developing for the index route.
    > 
    > Place the component inside the layout container in the **src/pages/index.js** (Below the SEO Component, which is already placed).
+   
+    
+    
 6. All the module.css files should also be placed inside your component's folder.   
 7. However, the developers are expected to remove all the React components which they placed in the **src/pages/index.js** before PR.
 
