@@ -115,7 +115,7 @@ All .js files inside **src/pages** directory will be processed as different rout
 
 > However we don't need any, other than the index route as of now.
 
-## 🤔 Is there any conventions to follow, while developing this as a team ?
+## 🤔 Is there any conventions to follow ?
 
 Yes, there are a bunch. 
 
