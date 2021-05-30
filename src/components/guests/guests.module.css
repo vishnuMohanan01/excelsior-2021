@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 10rem auto 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.guestsHeadBack {
+    position: relative;
+}
+
+.guestHeadTextContainer {
+    position: absolute;
+    margin: 1.5rem auto 0 auto;
+    color: white;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
