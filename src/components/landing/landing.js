@@ -21,6 +21,7 @@ const Landing = () => {
         width={320}
         height={57}
         className={landingStyles.excelsior21Image}
+        style={{position: "absolute"}}
       />
       <StaticImage
         src={"../../images/ex21.svg"}
@@ -29,6 +30,7 @@ const Landing = () => {
         width={464}
         height={217}
         className={landingStyles.ex21}
+        style={{position: "absolute"}}
       />
       <div className={landingStyles.riseTextContainer}>
         <span className={landingStyles.riseQuotes}>"</span><span className={landingStyles.riseText}>Rise above the rest</span><span className={landingStyles.riseQuotes}>"</span>
@@ -40,6 +42,7 @@ const Landing = () => {
         width={234}
         height={234}
         className={landingStyles.cube1}
+        style={{position: "absolute"}}
       />
       <StaticImage
         src={"../../images/Big Point-line triangle cube.svg"}
@@ -48,6 +51,7 @@ const Landing = () => {
         width={283}
         height={381}
         className={landingStyles.cube2}
+        style={{position: "absolute"}}
       />
       <StaticImage
         src={"../../images/Point-line triangle cube.svg"}
@@ -56,6 +60,7 @@ const Landing = () => {
         width={124}
         height={124}
         className={landingStyles.cube3}
+        style={{position: "absolute"}}
       />
     </div>
   );

@@ -43,6 +43,7 @@ const About = () => {
           placeholder={"blurred"}
           width={592}
           height={456}
+          style={{position: "absolute"}}
           className={aboutStyles.rightEx}
         />
         <StaticImage
@@ -51,6 +52,7 @@ const About = () => {
           placeholder={"blurred"}
           width={507}
           height={346}
+          style={{position: "absolute"}}
           className={aboutStyles.rightRise}
         />
         <StaticImage
@@ -59,6 +61,7 @@ const About = () => {
           placeholder={"blurred"}
           width={334}
           height={334}
+          style={{position: "absolute"}}
           className={aboutStyles.rightCube}
         />
       </div>
