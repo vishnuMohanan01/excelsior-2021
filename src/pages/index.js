@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 import Landing from "../components/landing"
 import About from "../components/about"
 import Guests from "../components/guests"
+import Contact from "../components/contact"
 
 const IndexPage = () => (
   <Layout>
