@@ -15,11 +15,13 @@ import "./layout.css"
 const Layout = ({ children }) => {
 
   return (
-    <>
+    <div style={{
+      maxWidth: "100vw",
+    }}>
       <Header />
       <div
         style={{
-          maxWidth: 960,
+          // maxWidth: 960,
         }}
       >
         <main>{children}</main>
@@ -33,7 +35,7 @@ const Layout = ({ children }) => {
          IEEE SB GEC Palakkad
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

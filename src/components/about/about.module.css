@@ -1,0 +1,77 @@
+.container {
+    margin: 8rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 100vw;
+}
+
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.leftHead {
+
+}
+
+.leftHeadBack {
+    position: relative;
+    left: 20px;
+}
+
+.leftHeadFront {
+    margin-top: -5px;
+    position: absolute;
+    left: 150px;
+    display: inline;
+}
+
+.leftHeadText {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.leftHeadExcelsior {
+    margin-top: -5px;
+}
+
+.leftPara {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 3rem 0 0 10rem;
+    width: 40vw;
+    text-align: justify;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.rightEx {
+    right: -5rem;
+    margin: 3rem 0 0 0;
+    position: absolute;
+}
+.rightRise  {
+    margin: 7rem 0 0 2rem;
+    position: absolute;
+}
+.rightCube  {
+    margin: 20rem 0 0 0;
+    right: -3rem;
+    position: absolute;
+}
