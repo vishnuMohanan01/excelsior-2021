@@ -1,0 +1,70 @@
+.container {
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+
+.exBackImage {
+    margin: 3rem 0 0 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.excelsior21Image {
+    position: absolute;
+    top: 130px;
+    left: 558px;
+}
+
+.ex21 {
+    position: absolute;
+    top: 160px;
+    left: 460px;
+}
+
+.riseTextContainer {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+.riseQuotes {
+    margin-right: 4px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+.riseText {
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 4px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.cube1 {
+    position: absolute;
+    top: 230px;
+    left: 960px;
+}
+
+.cube2 {
+    position: absolute;
+    top: 370px;
+    left: 10px;
+}
+
+.cube3 {
+    position: absolute;
+    top: 120px;
+    left:300px;
+}
+
+
