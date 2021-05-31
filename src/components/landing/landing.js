@@ -36,6 +36,18 @@ const Landing = ({aboutRef}) => {
         <span className={landingStyles.riseQuotes}>"</span><span className={landingStyles.riseText}>Rise above the rest</span><span className={landingStyles.riseQuotes}>"</span>
       </div>
       <StaticImage
+        src={"../../images/landing-reg-now-border.svg"}
+        alt={"reg now"}
+        placeholder={"blurred"}
+        width={287}
+        height={56}
+        className={landingStyles.regNowBorder}
+        style={{position: "absolute"}}
+      />
+      <a href={"https://www.google.com"} target={'_blank'} className={`${landingStyles.regNowLinkContainer} ${landingStyles.regNowLink}`}>
+          <span>Register Now</span>
+      </a>
+      <StaticImage
         src={"../../images/Point-line triangle cube.svg"}
         alt={"excelsior21"}
         placeholder={"blurred"}
