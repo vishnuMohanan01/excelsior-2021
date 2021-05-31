@@ -9,6 +9,7 @@ import Landing from "../components/landing"
 import About from "../components/about"
 import Guests from "../components/guests"
 import Contact from "../components/contact"
+import Pack from "../components/packs"
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +17,7 @@ const IndexPage = () => (
     <Landing />
     <About />
     {/*<Guests />*/}
-
+    <Pack />
   </Layout>
 )
 
