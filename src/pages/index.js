@@ -13,6 +13,7 @@ import Pack from "../components/packs"
 import { useEffect, useRef, useState } from "react"
 import Header from "../components/header"
 import Quotes from "../components/quote"
+import Sponsors from "../components/sponsors"
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
@@ -49,10 +50,6 @@ const IndexPage = () => {
       <Header tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
       <Landing aboutRef={aboutRef} />
       <About aboutBottomRef={aboutBottomRef} />
-      <Quotes />
-      <Guests />
-      <Pack />
-      <Contact />
     </Layout>
   );
 }
