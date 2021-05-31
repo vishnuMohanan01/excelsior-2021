@@ -14,6 +14,7 @@ import { useEffect, useRef, useState } from "react"
 import Header from "../components/header"
 import Quotes from "../components/quote"
 import Sponsors from "../components/sponsors"
+import Schedule from "../components/schedule"
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
