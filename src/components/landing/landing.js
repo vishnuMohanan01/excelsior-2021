@@ -3,9 +3,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as landingStyles from "./landing.module.css";
 import './landingStyles.scss'
 
-const Landing = () => {
+const Landing = ({aboutRef}) => {
   return (
-    <div className={landingStyles.container}>
+    <div className={landingStyles.container} ref={aboutRef} >
       <StaticImage
         src={"../../images/ex-back-dt.svg"}
         alt={"ex"}

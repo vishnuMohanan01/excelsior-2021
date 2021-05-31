@@ -4,14 +4,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import { useForm, ValidationError } from '@formspree/react';
 
 
-const Contact = () => {
+const Contact = ({contactRef}) => {
   const [state, handleSubmit] = useForm("xoqydldj");
   if (state.succeeded) {
     // TODO: show some response
   }
 
   return (
-    <div className={contactStyles.container}>
+    <div className={contactStyles.container} ref={contactRef} >
       <div className={contactStyles.leftContainer}>
         <div className={contactStyles.leftHeader}>
           <div className={contactStyles.leftHeaderText}>Team</div>

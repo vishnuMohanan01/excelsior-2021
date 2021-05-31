@@ -105,4 +105,5 @@
     position: absolute;
     margin-top: 15rem;
     left: 0;
+    z-index: 0;
 }

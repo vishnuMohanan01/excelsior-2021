@@ -1,12 +1,11 @@
 import * as React from "react";
 import * as aboutStyles from "./about.module.css";
 import { StaticImage } from "gatsby-plugin-image"
-import * as landingStyles from "../landing/landing.module.css"
 
 
-const About = () => {
+const About = ({aboutBottomRef}) => {
   return (
-    <div className={aboutStyles.container}>
+    <div ref={aboutBottomRef} className={aboutStyles.container}>
       <div className={aboutStyles.leftContainer}>
         <div className={aboutStyles.leftHead}>
           <StaticImage
