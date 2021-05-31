@@ -16,8 +16,6 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Landing />
     <About />
-    {/*<Guests />*/}
-    <Pack />
   </Layout>
 )
 
