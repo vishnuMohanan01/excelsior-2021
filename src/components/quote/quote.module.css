@@ -1,0 +1,28 @@
+.container{
+    height: 10rem;
+    width: 80%;
+    margin: 8rem auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.q1 {
+
+}
+
+
+.quoteText {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.q1 {
+
+}
