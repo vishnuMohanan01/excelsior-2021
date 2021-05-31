@@ -124,11 +124,11 @@ Yes, there are a bunch.
 2. Components should be created inside a folder in the **src/components** dir (preferably, the component name as the folder name).
 3. Different component folders should be created for each component you are assigned.
 4. Each of those component folders should export a React Component, for use inside any of the routes.
-5. To view your component during development, import and place that component inside the layout container of the page (Below the Guest Component, which is already placed).
+5. To view your component during development, import and place that component inside the layout container of the page (Below the About Component, which is already placed).
 
    > For example: If you're developing for the index route.
    > 
-   > Place the component inside the layout container in the **src/pages/index.js** (Below the Guest Component, which is already placed).
+   > Place the component inside the layout container in the **src/pages/index.js** (Below the About Component, which is already placed).
    
     
     
