@@ -1,0 +1,91 @@
+:root {
+  --transition: all 0.1s linear;
+}
+.btn {
+  width: 30px;
+  height: 30px;
+}
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  margin: 2rem;
+  height: 110vh;
+  background-image: url("../../images//Alumni/Alumni’s\ Talk.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.sectionImage {
+  position: absolute;
+  top: 70px;
+  z-index: 10;
+}
+.image {
+  width: 505px;
+  height: 371px;
+  border-radius: 10px;
+}
+.rightArrow,
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  font-size: 3rem;
+  color: #000;
+  z-index: 100;
+  cursor: pointer;
+  user-select: none;
+}
+.rightArrow {
+  right: 350px;
+}
+.leftArrow {
+  left: 350px;
+}
+
+.sectionCenter {
+  margin: 0 auto;
+  width: 100vw;
+  height: 500px;
+  max-width: 1500px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background-image: url("../../images/Alumni/Device.svg");
+  /* background-color: rgb(228, 166, 166); */
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: var(--transition);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.slide.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide.lastSlide {
+  transform: translateX(-0.5%);
+}
+.slide.nextSlide {
+  transform: translateX(0.5%);
+}
+.image {
+  width: 83%;
+  height: 83%;
+  object-fit: contain;
+}
