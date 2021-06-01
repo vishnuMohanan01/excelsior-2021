@@ -28,11 +28,10 @@ const About = ({aboutBottomRef}) => {
             />
           </div>
         </div>
-        <div className={aboutStyles.leftPara}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged
+        <div className={aboutStyles.leftPara}>Exclesior 2021 is the third emphasis of the flagship event of IEEE SB GEC Palakkad. It is usually conducted at Government Engineering College, Sreekrishnapuram, Palakkad every year, lasts for a period of nearly 4 days. Participation of about 200 vibrant technophiles,the event marks a techno enthusiasts fortune moment to get involved in culmination of information,inspiration and association.
         </div>
         <div className={aboutStyles.leftPara}>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web pag.
+          Gratifying to curious minds, it is an integration of several interactive orations by some of the interesting minds in technology as well as workshops on your passion. This tech-fest takes young dynamic minds to the world of technovation and techtainment.
         </div>
       </div>
       <div className={aboutStyles.rightContainer}>

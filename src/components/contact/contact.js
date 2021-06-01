@@ -41,7 +41,8 @@ const Contact = ({contactRef}) => {
       <div className={contactStyles.rightContainer}>
         <div className={contactStyles.rightHeader}>
           <div className={contactStyles.enquiryHead}>Enquiry</div>
-          <div className={contactStyles.enquiryText}>Lorem Ipsum is simply dummy text of the printing and typesetting industr</div>
+          <div className={contactStyles.enquiryText}>Stick to us if you have any queries. We don't want you have any concerns. Our volunteer will get in touch with you as early as possible.
+          </div>
         </div>
         <form className={contactStyles.formContainer} onSubmit={handleSubmit} >
           <div className={contactStyles.formEntity}>

@@ -137,6 +137,9 @@
 }
 
 .inputText {
+    color: #292929;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     width: 70%;
     border: none;
     border-bottom: 1px solid #989898;
@@ -149,6 +152,8 @@
 }
 
 .inputTextArea {
+    color: #292929;
+    font-family: 'Montserrat', sans-serif;
     width: 70%;
     height: 10rem;
     resize: none;

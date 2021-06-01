@@ -52,6 +52,13 @@ const IndexPage = () => {
       <Header tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
       <Landing aboutRef={aboutRef} />
       <About aboutBottomRef={aboutBottomRef} />
+      <Quotes />
+      <Guests />
+      <Pack />
+      <Schedule />
+      <Sponsors />
+      <Contact />
+      <FAQ />
     </Layout>
   );
 }
