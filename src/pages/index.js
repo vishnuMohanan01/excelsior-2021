@@ -56,8 +56,8 @@ const IndexPage = () => {
       <Guests />
       <Pack />
       <Schedule />
-      <Sponsors />
-      <Contact />
+      <Sponsors sponsorRef={sponsorRef}/>
+      <Contact contactRef={contactRef} />
       <FAQ />
     </Layout>
   );
