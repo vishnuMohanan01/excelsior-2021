@@ -1,10 +1,9 @@
 import * as React from "react";
 import * as eventStyles from "./techEvents.module.css"
 
-
 const techEvents = () => {
     return (
-        <div className={eventStyles.container}>
+        <div style={{marginBottom: "2rem"}}>
             <p className={eventStyles.heading}>
                 <h2 className={eventStyles.header}>Technical</h2>
                 <h3 className={eventStyles.subHeader}>Events</h3>

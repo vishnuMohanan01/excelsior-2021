@@ -1,6 +1,5 @@
 import * as React from "react";
-import * as eventStyles from "./nonTechEvents.module.css"
-
+import * as eventStyles from "../techEvents/techEvents.module.css"
 
 const nonTechEvents = () => {
     return (
