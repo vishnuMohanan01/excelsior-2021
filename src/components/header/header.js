@@ -51,7 +51,7 @@ const HeaderMenu = () => {
       </Link>
     </div>
   )
-}
+};
 
 
 const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
@@ -66,12 +66,13 @@ const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, conta
     />
     <HeaderMenu tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
   </div>
-)
+);
 
 const Header = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
   <div className={headerStyles.container}>
     <HeaderNavBar tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
   </div>
-)
+);
 
 export default Header
+
