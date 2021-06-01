@@ -15,6 +15,7 @@ import Header from "../components/header"
 import Quotes from "../components/quote"
 import Sponsors from "../components/sponsors"
 import Schedule from "../components/schedule"
+import FAQ from "../components/faq"
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
