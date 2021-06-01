@@ -28,9 +28,9 @@ const SponsorType = () => {
   );
 };
 
-const Sponsors = () => {
+const Sponsors = ({sponsorRef}) => {
   return (
-    <div className={sponsorStyles.container}>
+    <div ref={sponsorRef} className={sponsorStyles.container}>
       <div className={sponsorStyles.headerContainer}>
         <StaticImage
           src={"../../images/sponsors-head.svg"}
