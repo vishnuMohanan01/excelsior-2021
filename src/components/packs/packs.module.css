@@ -28,7 +28,7 @@
 .cubeLarge {
     z-index: 0;
     position: absolute;
-    right: 0;
+    right: -5rem;
 }
 
 .packsBody {
