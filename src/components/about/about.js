@@ -31,7 +31,7 @@ const About = ({aboutBottomRef}) => {
         <div className={aboutStyles.leftPara}>Exclesior 2021 is the third emphasis of the flagship event of IEEE SB GEC Palakkad. It is usually conducted at Government Engineering College, Sreekrishnapuram, Palakkad every year, lasts for a period of nearly 4 days. Participation of about 200 vibrant technophiles,the event marks a techno enthusiasts fortune moment to get involved in culmination of information,inspiration and association.
         </div>
         <div className={aboutStyles.leftPara}>
-          Gratifying to curious minds, it is an integration of several interactive orations by some of the interesting minds in technology as well as workshops on your passion. This tech-fest takes young dynamic minds to the world of technovation and techtainment.
+          Gratifying to curious minds, it is an integration of several interactive orations by some of the interesting minds in technology as well as workshops on your passion. This tech-fest takes young dynamic minds to the world of technovation and techtainment.  It mainly focuses on providing quality technical workshops, events and webinars to the students from almost every Engineering colleges, the main aim being making the students technically independent in the respected fields
         </div>
       </div>
       <div className={aboutStyles.rightContainer}>

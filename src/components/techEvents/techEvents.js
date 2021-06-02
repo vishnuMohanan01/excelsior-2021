@@ -3,7 +3,7 @@ import * as eventStyles from "./techEvents.module.css"
 
 const techEvents = () => {
     return (
-        <div style={{marginBottom: "2rem"}}>
+        <div style={{marginBottom: "2rem", marginTop: "8rem"}}>
             <p className={eventStyles.heading}>
                 <h2 className={eventStyles.header}>Technical</h2>
                 <h3 className={eventStyles.subHeader}>Events</h3>
@@ -56,7 +56,7 @@ const techEvents = () => {
                         </a>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     )
 }

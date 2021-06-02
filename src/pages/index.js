@@ -18,6 +18,7 @@ import Quotes from "../components/quote"
 import Sponsors from "../components/sponsors"
 import Schedule from "../components/schedule"
 import FAQ from "../components/faq"
+import Events from "../components/alumnisTalk"
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
@@ -58,6 +59,9 @@ const IndexPage = () => {
       <Guests />
       <Pack />
       <Schedule />
+      <TechEvents />
+      <NonTechEvents />
+      <Events />
       <Sponsors sponsorRef={sponsorRef}/>
       <Contact contactRef={contactRef} />
       <FAQ />

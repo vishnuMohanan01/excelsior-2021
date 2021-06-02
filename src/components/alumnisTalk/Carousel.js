@@ -50,7 +50,7 @@ function Carousel() {
       <img src={SectionImage} className={styles.sectionImage} />
       <Button rotate="true" clickFn={prevSlide} styleName={styles.leftArrow} />
       <Button clickFn={nextSlide} styleName={styles.rightArrow} />
-      <div className={styles.sectionCenter}>
+      <div style={{marginTop: "10rem"}} className={styles.sectionCenter}>
         <Slider slides={state.current} currentSlide={currentSlide} />
       </div>
     </section>

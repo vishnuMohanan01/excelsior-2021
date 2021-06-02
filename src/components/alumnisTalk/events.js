@@ -3,7 +3,7 @@ import Carousel from "./Carousel"
 
 const Events = () => {
   return (
-    <div>
+    <div style={{marginTop: "8rem"}}>
       <Carousel />
     </div>
   )
