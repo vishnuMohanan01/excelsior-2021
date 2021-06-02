@@ -30,20 +30,23 @@
     color: #fff;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     font-weight: 100;
     position: absolute;
     top: 350px;
     left: 500px;
 }
 .riseQuotes {
-    margin-right: 4px;
+    display: none;
+    /*margin-right: 4px;*/
     color: #fff;
     font-size: 40px;
     font-weight: 500;
 }
 .riseText {
-    font-family: 'Montserrat', sans-serif;
-    margin-right: 4px;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+    /*margin-right: 4px;*/
     color: #fff;
     font-size: 40px;
     font-weight: 100;

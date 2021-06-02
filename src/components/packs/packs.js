@@ -20,7 +20,7 @@ const Pack = () => {
     <div className={packStyles.container}>
       <div className={packStyles.headerContainer}>
         <StaticImage
-          src={"../../images/alumnisTalk-back.svg"}
+          src={"../../images/events-back.svg"}
           alt={"events"}
           placeholder={"blurred"}
           width={564}
@@ -31,7 +31,7 @@ const Pack = () => {
         <div className={packStyles.eventsHeadText}>EVENTS</div>
       </div>
       <StaticImage
-        src={"../../images/alumnisTalk-cube-large.svg"}
+        src={"../../images/events-cube-large.svg"}
         alt={"cube"}
         placeholder={"blurred"}
         width={307}
@@ -47,7 +47,7 @@ const Pack = () => {
           <Card head={"Premium"} />
         </div>
         <StaticImage
-          src={"../../images/alumnisTalk-cube-small.svg"}
+          src={"../../images/events-cube-small.svg"}
           alt={"cube"}
           placeholder={"blurred"}
           width={390}
