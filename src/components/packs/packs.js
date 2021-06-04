@@ -2,6 +2,11 @@ import * as React from 'react';
 import * as packStyles from './packs.module.css';
 import { StaticImage } from "gatsby-plugin-image"
 
+import eventsBack from "../../images/events-back.svg";
+import cubeLarge from "../../images/events-cube-large.svg";
+import cubeSmall from "../../images/events-cube-small.svg";
+
+
 const Card = ({head, content}) => {
   return (
     <div className={packStyles.card}>
@@ -19,25 +24,17 @@ const Pack = () => {
   return (
     <div className={packStyles.container}>
       <div className={packStyles.headerContainer}>
-        <StaticImage
-          src={"../../images/events-back.svg"}
+        <img
+          src={eventsBack}
           alt={"events"}
-          placeholder={"blurred"}
-          width={564}
-          height={113}
           className={packStyles.eventsHeadBack}
-          style={{position: "absolute"}}
         />
         <div className={packStyles.eventsHeadText}>EVENTS</div>
       </div>
-      <StaticImage
-        src={"../../images/events-cube-large.svg"}
+      <img
+        src={cubeLarge}
         alt={"cube"}
-        placeholder={"blurred"}
-        width={307}
-        height={718}
         className={packStyles.cubeLarge}
-        style={{position: "absolute"}}
       />
       <div className={packStyles.packsBody}>
         <div className={packStyles.packsHead}>Best Shots For You</div>
@@ -46,14 +43,10 @@ const Pack = () => {
           <Card head={"Essentials"} />
           <Card head={"Premium"} />
         </div>
-        <StaticImage
-          src={"../../images/events-cube-small.svg"}
+        <img
+          src={cubeSmall}
           alt={"cube"}
-          placeholder={"blurred"}
-          width={390}
-          height={631}
           className={packStyles.cubeSmall}
-          style={{position: "absolute"}}
         />
       </div>
     </div>

@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import * as headerStyles from "./header.module.css";
 import { StaticImage } from "gatsby-plugin-image"
+import HeaderNavBarMB from "./header-mb"
 
 
 const HeaderMenu = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => {
@@ -25,7 +26,7 @@ const HeaderMenu = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contact
 
 
 const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
-  <div className={headerStyles.navBarContainer}>
+  <div className={`${headerStyles.navBarContainer} ${headerStyles.desktopVersion}`}>
     <StaticImage
       src={"../../images/excelsior-header.svg"}
       alt={"excelsior'21"}
@@ -39,9 +40,10 @@ const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, conta
 );
 
 
-const Header = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
+const Header = ({setSideNavBarStatus, tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
   <div className={headerStyles.container}>
     <HeaderNavBar tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
+    <HeaderNavBarMB setSideNavBarStatus={setSideNavBarStatus} />
   </div>
 )
 

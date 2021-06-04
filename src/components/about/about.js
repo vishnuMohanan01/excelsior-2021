@@ -3,62 +3,67 @@ import * as aboutStyles from "./about.module.css";
 import { StaticImage } from "gatsby-plugin-image"
 
 
+import whatIsExBackImg from "../../images/what-is-excelsior-back.svg";
+import excelsior21Img from "../../images/what-is-excelsior-front.svg";
+import aboutBigEx from "../../images/about-ex.svg";
+import riseTextImg from "../../images/Rise-Above-The-Rest.svg";
+import cubeImg from "../../images/Point-line triangle cube.svg";
+import bigCubeImg from "../../images/Big Point-line triangle cube.svg";
+
+
 const About = ({aboutBottomRef}) => {
   return (
     <div ref={aboutBottomRef} className={aboutStyles.container}>
       <div className={aboutStyles.leftContainer}>
         <div className={aboutStyles.leftHead}>
-          <StaticImage
-            src={"../../images/what-is-excelsior-back.svg"}
-            alt={"excelsior21"}
-            placeholder={"blurred"}
-            width={711}
-            height={91}
+          <img
+            src={whatIsExBackImg}
+            alt={"excelsior"}
             className={aboutStyles.leftHeadBack}
           />
           <div className={aboutStyles.leftHeadFront}>
             <div className={aboutStyles.leftHeadText}>What is</div>
-            <StaticImage
-              src={"../../images/what-is-excelsior-front.svg"}
+            <img
+              src={excelsior21Img}
               alt={"excelsior21"}
-              placeholder={"blurred"}
-              width={478}
-              height={85}
               className={aboutStyles.leftHeadExcelsior}
             />
           </div>
         </div>
-        <div className={aboutStyles.leftPara}>Exclesior 2021 is the third emphasis of the flagship event of IEEE SB GEC Palakkad. It is usually conducted at Government Engineering College, Sreekrishnapuram, Palakkad every year, lasts for a period of nearly 4 days. Participation of about 200 vibrant technophiles,the event marks a techno enthusiasts fortune moment to get involved in culmination of information,inspiration and association.
+        <div className={aboutStyles.leftPara}>Exclesior 2021 is the third emphasis of the flagship event of IEEE SB GEC Palakkad. It is usually conducted at Government Engineering College, Sreekrishnapuram, Palakkad every year, lasts for a period of nearly 4 days. Participation of about 200 vibrant technophiles,the event marks a techno enthusiasts fortune moment to get involved in culmination of information, inspiration and association.
         </div>
         <div className={aboutStyles.leftPara}>
-          Gratifying to curious minds, it is an integration of several interactive orations by some of the interesting minds in technology as well as workshops on your passion. This tech-fest takes young dynamic minds to the world of technovation and techtainment.  It mainly focuses on providing quality technical workshops, events and webinars to the students from almost every Engineering colleges, the main aim being making the students technically independent in the respected fields
+          Gratifying to curious minds, it is an integration of several interactive orations by some of the interesting minds in technology as well as workshops on your passion. This tech-fest takes young dynamic minds to the world of technovation and techtainment.  It mainly focuses on providing quality technical workshops, events and webinars to the students from almost every Engineering colleges, the main aim being making the students technically independent in the respected fields.
         </div>
       </div>
       <div className={aboutStyles.rightContainer}>
-        <StaticImage
-          src={"../../images/about-ex.svg"}
-          alt={"ex"}
-          placeholder={"blurred"}
-          width={592}
-          height={456}
+        <img
+          src={cubeImg}
+          alt={"cubeSmall"}
           style={{position: "absolute"}}
+          className={aboutStyles.rightSmallCube}
+        />
+        <img
+          src={aboutBigEx}
+          alt={"ex"}
+          // style={{position: "absolute"}}
           className={aboutStyles.rightEx}
         />
-        <StaticImage
-          src={"../../images/Rise-Above-The-Rest.svg"}
+        <img
+          src={riseTextImg}
           alt={"rise above the rest"}
-          placeholder={"blurred"}
-          width={507}
-          height={346}
           style={{position: "absolute"}}
           className={aboutStyles.rightRise}
         />
-        <StaticImage
-          src={"../../images/Point-line triangle cube.svg"}
+        <img
+          src={cubeImg}
           alt={"excelsior21"}
-          placeholder={"blurred"}
-          width={334}
-          height={334}
+          style={{position: "absolute"}}
+          className={aboutStyles.rightCube2}
+        />
+        <img
+          src={cubeImg}
+          alt={"excelsior21"}
           style={{position: "absolute"}}
           className={aboutStyles.rightCube}
         />

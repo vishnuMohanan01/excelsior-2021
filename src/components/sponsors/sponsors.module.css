@@ -66,3 +66,76 @@
     font-weight: 300;
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 33vh auto 0 5rem ;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding-top: 2rem;
+    }
+
+    .headerContainer {
+    }
+
+    .sponsorsHeadBack {
+        position: relative;
+    }
+
+    .sponsorTextHead {
+        color: #fff;
+        font-size: 65px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin: 4rem 0 0 3rem;
+    }
+
+    .typeContainer {
+        margin: 8rem 0 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .typeHead {
+        color: #fff;
+        font-size: 35px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+
+    .cardContainer {
+        margin: 8rem 0 0 0;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .card {
+        height: 10rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardName {
+        font-family: 'Poppins', sans-serif;
+        font-size: 27px;
+    }
+
+    .cardDescription {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+}

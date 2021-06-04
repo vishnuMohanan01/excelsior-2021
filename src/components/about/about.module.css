@@ -70,8 +70,118 @@
     margin: 7rem 0 0 2rem;
     position: absolute;
 }
+
 .rightCube  {
     margin: 20rem 0 0 0;
     right: -3rem;
     position: absolute;
+}
+
+.rightSmallCube {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 8rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .leftContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .leftHead {
+        width: 100%;
+    }
+
+    .leftHeadBack {
+        position: relative;
+        width: 90vw;
+    }
+
+    .leftHeadFront {
+        margin-top: -3.4rem;
+        /*position: absolute;*/
+        left: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .leftHeadText {
+        margin: -1rem 0 0 6rem;
+        /*align-self: center;*/
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .leftHeadExcelsior {
+        margin: -6px 0 0 2rem;
+        max-width: 60%;
+        align-self:flex-start;
+    }
+
+    .leftPara {
+        color: #fff;
+        font-size: 11px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: 1rem 0 0 2rem;
+        width: 60vw;
+        text-align: justify;
+        line-height: 16px;
+    }
+
+    .rightContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+    }
+
+    .rightEx {
+        right: 0;
+        margin: 3rem 0 0 0;
+        position: absolute;
+    }
+    .rightRise  {
+        margin: 10rem 0 0 0;
+        position: absolute;
+        max-width: 30%;
+    }
+    .rightCube  {
+        z-index: 97;
+        margin: 29rem 18rem 0 0;
+        position: absolute;
+        max-width: 25%;
+        transform: rotate(90deg);
+    }
+    .rightCube2  {
+        margin: 20rem 0 0 0;
+        position: absolute;
+        max-width: 15%;
+        transform: rotate(40deg);
+    }
+    .rightSmallCube {
+        position: absolute;
+        right: -1rem;
+        margin-top: -5rem;
+        display: inline;
+        max-width: 20%;
+        transform: rotate(0deg);
+    }
 }

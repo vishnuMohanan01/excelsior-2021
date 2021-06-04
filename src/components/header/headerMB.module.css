@@ -1,0 +1,27 @@
+.container {
+    background-color: #292929;
+    opacity: 1;
+    padding: 2rem 2rem 0 2rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exLogo {
+    opacity: 1;
+    width: 12%;
+}
+
+.hamburger {
+    opacity: 1;
+    width: 7%;
+}
+
+@media only screen and (min-width: 769px) {
+    .mobileVersion {
+        display: none;
+    }
+}

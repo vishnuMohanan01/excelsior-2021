@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   return (
     <div style={{
       maxWidth: "100vw",
-    }}>
+    }} className={"layoutClass"}>
 
       <div
         style={{

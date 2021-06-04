@@ -28,6 +28,16 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #292929;
+  }
+  .layoutClass {
+    position: relative;
+  }
+}
 article,
 aside,
 details,

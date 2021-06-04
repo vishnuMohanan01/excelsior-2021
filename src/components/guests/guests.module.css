@@ -24,3 +24,25 @@
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 5rem auto 0 auto;
+    }
+
+    .header {
+        width: 80vw;
+    }
+
+    .guestsHeadBack {
+        position: relative;
+    }
+
+    .guestHeadTextContainer {
+        position: absolute;
+        margin: 1rem auto 0 auto;
+        color: white;
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+    }
+}

@@ -1,4 +1,12 @@
 .container {
+    /*margin: 0;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*position: relative;*/
+    /*width: 100vw;*/
+    /*height: 100%;*/
+}
+.dtContainer {
     margin: 0;
     top: 0;
     left: 0;
@@ -106,6 +114,12 @@
     position: absolute;
     top: 120px;
     left:300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .desktopVersion {
+        display: none;
+    }
 }
 
 

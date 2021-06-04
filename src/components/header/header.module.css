@@ -37,3 +37,20 @@
     align-items: start;
 }
 
+@media only screen and (max-width: 768px) {
+    .desktopVersion {
+        display: none;
+    }
+    .container {
+        z-index: 99;
+        margin: 0 0 0 0;
+        height: 4rem;
+        width: 100vw;
+        border-bottom: none;
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+}
+

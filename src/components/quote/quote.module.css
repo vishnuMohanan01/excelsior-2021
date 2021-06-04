@@ -26,3 +26,19 @@
 .q1 {
 
 }
+
+@media only screen and (max-width: 768px) {
+    .container{
+        height: 10rem;
+        width: 90%;
+        margin: 8rem auto 0 auto;
+    }
+
+    .quoteText {
+        line-height: 16px;
+        font-size: 11px;
+        width: 85%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

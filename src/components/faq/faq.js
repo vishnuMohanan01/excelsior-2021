@@ -2,17 +2,16 @@ import React from 'react';
 import * as faqStyles from "./faq.module.css";
 import { StaticImage } from "gatsby-plugin-image"
 
+import faqBackImg from "../../images/faq-back.svg";
+
 
 const FAQ = () => {
   return (
     <div className={faqStyles.container}>
       <div className={faqStyles.headerContainer}>
-        <StaticImage
-          src={"../../images/faq-back.svg"}
+        <img
+          src={faqBackImg}
           alt={"faq"}
-          placeholder={"blurred"}
-          width={299}
-          height={125}
           className={faqStyles.headerBack}
         />
         <div className={faqStyles.headerText}>FAQ</div>

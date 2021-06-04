@@ -29,13 +29,13 @@
 .faqLeft {
     margin-top: 4rem;
     align-self: start;
-    width: 50%;
+    width: 45%;
 }
 
 .faqRight {
     margin-top: 4rem;
     align-self: flex-end;
-    width: 50%;
+    width: 45%;
 }
 
 .faqHead {
@@ -63,4 +63,82 @@
 .answerRight {
     border-right: 1px solid #fff;
     padding-right: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 10rem auto 0 0;
+        width: 100vw;
+    }
+
+    .headerContainer {
+        z-index: 98;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .headerBack {
+    }
+
+    .headerText {
+        position: absolute;
+        margin: 0 0 0 0;
+        color: white;
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .faqContainer {
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .faqLeft {
+        margin-top: 4rem;
+        align-self: center;
+        width: 90%;
+    }
+
+    .faqRight {
+        margin-top: 4rem;
+        align-self: center;
+        width: 90%;
+    }
+
+    .faqHead {
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 35px;
+        height: auto;
+        line-height: 40px;
+        font-weight: 600;
+    }
+
+    .faqAnswer {
+        font-size: 14px;
+        padding-top: 1rem;
+        margin-top: 2rem;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .answerLeft {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .answerRight {
+        border-right: none;
+        padding-right: 0;
+    }
 }

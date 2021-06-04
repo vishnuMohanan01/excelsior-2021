@@ -19,10 +19,13 @@ import Sponsors from "../components/sponsors"
 import Schedule from "../components/schedule"
 import FAQ from "../components/faq"
 import Events from "../components/alumnisTalk"
+import SideNavBar from "../components/sideNavBar"
+import Logos from "../components/logos"
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [sideNavBarsStatus, setSideNavBarStatus] = useState(false);
+
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
   const sponsorRef = useRef(null);
@@ -52,11 +55,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <Header tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
+      <Header setSideNavBarStatus={setSideNavBarStatus} tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
+      <SideNavBar sideNavBarStatus={sideNavBarsStatus} />
       <Landing aboutRef={aboutRef} />
       <About aboutBottomRef={aboutBottomRef} />
-      <Quotes />
+      <Logos />
       <Guests />
+      <Quotes />
       <Pack />
       <Schedule />
       <TechEvents />
