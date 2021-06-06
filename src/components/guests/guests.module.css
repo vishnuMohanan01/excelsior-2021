@@ -9,7 +9,7 @@
 .header {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -25,13 +25,62 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.bodyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: 2rem auto 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cardImage {
+    padding: 0;
+}
+
+.cardText {
+    text-align: center;
+}
+
+.guestName {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.guestDesignation {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
-        margin: 5rem auto 0 auto;
+        margin: 0 auto 0 0;
+        padding-top: 10rem;
+        width: 100vw;
     }
 
     .header {
-        width: 80vw;
+        z-index: 98;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 97%;
+        height: 100%;
+        margin: 0 auto;
     }
 
     .guestsHeadBack {
@@ -40,9 +89,38 @@
 
     .guestHeadTextContainer {
         position: absolute;
-        margin: 1rem auto 0 auto;
+        margin: 0 0 0 0;
         color: white;
-        font-size: 40px;
+        font-size: 60px;
         font-family: 'Poppins', sans-serif;
+    }
+
+    .bodyContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .cardImage {
+        max-width: 50%;
+    }
+
+    .cardText {
+        text-align: center;
+    }
+
+    .guestName {
+        margin-bottom: 3px;
+    }
+
+    .guestDesignation {
+
     }
 }

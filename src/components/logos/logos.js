@@ -7,9 +7,9 @@ import ias from "../../images/logos/ias.svg";
 import sb from "../../images/logos/sb.svg";
 import wie from "../../images/logos/wie.svg";
 
-const Logos = () => {
+const Logos = ({setSideNavBarStatus}) => {
   return (
-    <div className={logoStyles.container}>
+    <div onClick={() => setSideNavBarStatus(false)} className={logoStyles.container}>
       <img
         src={sb}
         alt={"SB Logo"}

@@ -4,22 +4,24 @@ import * as headerStyles from "./header.module.css";
 import { StaticImage } from "gatsby-plugin-image"
 import HeaderNavBarMB from "./header-mb"
 
+import excelsior21Img from "../../images/excelsior-header.svg";
+
 
 const HeaderMenu = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => {
   return (
     <div className={headerStyles.menuContainer}>
-      <Link  to={"/"} onClick={() => {setTabSelected("about");scrollToRef(aboutRef);}} className={`${headerStyles.menuItem} noSelect`} style={(tabSelected === "about") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
+      <div onClick={() => {setTabSelected("about");scrollToRef(aboutRef);}} className={`${headerStyles.menuItem} noSelect`} style={(tabSelected === "about") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
         About
-      </Link>
+      </div>
       <a href={"https://www.google.com"} target={'_blank'} onClick={() => {setTabSelected("registration");setTimeout(() => setTabSelected("about"), 1000)}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "registration") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
         Registration
       </a>
-      <Link  to={"/"} onClick={() => {setTabSelected("sponsors");scrollToRef(sponsorRef);}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "sponsors") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
+      <div onClick={() => {setTabSelected("sponsors");scrollToRef(sponsorRef);}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "sponsors") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
         Sponsors
-      </Link>
-      <Link  to={"/"} onClick={() => {setTabSelected("contact");scrollToRef(contactRef);}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "contact") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
+      </div>
+      <div onClick={() => {setTabSelected("contact");scrollToRef(contactRef);}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "contact") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
         Contact
-      </Link>
+      </div>
     </div>
   );
 };
@@ -27,14 +29,13 @@ const HeaderMenu = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contact
 
 const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
   <div className={`${headerStyles.navBarContainer} ${headerStyles.desktopVersion}`}>
-    <StaticImage
-      src={"../../images/excelsior-header.svg"}
-      alt={"excelsior'21"}
-      placeholder={"blurred"}
-      width={213}
-      height={39}
-      className={headerStyles.excelsiorImage}
-    />
+    <a href="/" className={headerStyles.homeLink}>
+      <img
+        src={excelsior21Img}
+        alt={"excelsior'21"}
+        className={headerStyles.excelsiorImage}
+      />
+    </a>
     <HeaderMenu tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
   </div>
 );
@@ -42,8 +43,21 @@ const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, conta
 
 const Header = ({setSideNavBarStatus, tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
   <div className={headerStyles.container}>
-    <HeaderNavBar tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
-    <HeaderNavBarMB setSideNavBarStatus={setSideNavBarStatus} />
+    <HeaderNavBar
+      tabSelected={tabSelected}
+      setTabSelected={setTabSelected}
+      scrollToRef={scrollToRef}
+      contactRef={contactRef}
+      sponsorRef={sponsorRef}
+      aboutRef={aboutRef}
+    />
+    <HeaderNavBarMB
+      setSideNavBarStatus={setSideNavBarStatus}
+      scrollToRef={scrollToRef}
+      contactRef={contactRef}
+      sponsorRef={sponsorRef}
+      aboutRef={aboutRef}
+    />
   </div>
 )
 

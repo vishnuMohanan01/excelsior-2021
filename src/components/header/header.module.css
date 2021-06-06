@@ -5,13 +5,17 @@
     border-bottom: 1px solid #fff;
 }
 
+.homeLink {
+    margin-left: 1rem;
+}
+
 .excelsiorImage {
-    margin-left: 4rem;
-    margin-right: auto;
+    margin: 0 auto 0 0;
 }
 
 .menuContainer {
-    margin: auto auto -2px auto;
+    position: relative;
+    margin: auto 0 -2px auto;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -23,10 +27,11 @@
 }
 
 .menuItem {
-    padding-bottom: 3px;
+    padding-bottom: 7px;
     color: #fff;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 3rem;
+    cursor: pointer;
 }
 
 .navBarContainer {
@@ -34,7 +39,8 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {

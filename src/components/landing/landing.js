@@ -4,7 +4,7 @@ import * as landingStyles from "./landing.module.css";
 import LandingMB from "./landing-mb"
 
 
-const Landing = ({aboutRef}) => {
+const Landing = ({aboutRef, setSideNavBarStatus}) => {
   return (
     <div className={landingStyles.container}>
         <div className={`${landingStyles.dtContainer} ${landingStyles.desktopVersion}`} ref={aboutRef} >
@@ -77,7 +77,7 @@ const Landing = ({aboutRef}) => {
               style={{position: "absolute"}}
             />
         </div>
-        <LandingMB />
+        <LandingMB setSideNavBarStatus={setSideNavBarStatus} />
     </div>
   );
 }

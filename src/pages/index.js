@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 
 import Layout from "../components/layout"
@@ -30,7 +28,12 @@ const IndexPage = () => {
   const contactRef = useRef(null);
   const sponsorRef = useRef(null);
   const aboutBottomRef = useRef(null);
-
+  const guestsRef = useRef(null);
+  const workshopsRef = useRef(null);
+  const scheduleRef = useRef(null);
+  const alumniRef = useRef(null);
+  const faqRef = useRef(null);
+  const packsRef = useRef(null);
 
   const scrollToRef = (ref) => {
     window.scrollTo({top: ref.current.offsetTop, behavior: 'smooth'});
@@ -55,21 +58,46 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <Header setSideNavBarStatus={setSideNavBarStatus} tabSelected={tabSelected} setTabSelected={setTabSelected} scrollToRef={scrollToRef} contactRef={contactRef} sponsorRef={sponsorRef} aboutRef={aboutRef} />
-      <SideNavBar sideNavBarStatus={sideNavBarsStatus} />
-      <Landing aboutRef={aboutRef} />
-      <About aboutBottomRef={aboutBottomRef} />
-      <Logos />
-      <Guests />
-      <Quotes />
-      <Pack />
-      <Schedule />
-      <TechEvents />
-      <NonTechEvents />
-      <Events />
-      <Sponsors sponsorRef={sponsorRef}/>
-      <Contact contactRef={contactRef} />
-      <FAQ />
+      <Header setSideNavBarStatus={setSideNavBarStatus}
+              tabSelected={tabSelected}
+              setTabSelected={setTabSelected}
+              scrollToRef={scrollToRef}
+              contactRef={contactRef}
+              sponsorRef={sponsorRef}
+              aboutRef={aboutRef}
+              guestsRef={guestsRef}
+              scheduleRef={scheduleRef}
+              alumniRef={alumniRef}
+              faqRef={faqRef}
+      />
+      <SideNavBar
+        sideNavBarStatus={sideNavBarsStatus}
+        setSideNavBarStatus={setSideNavBarStatus}
+        setTabSelected={setTabSelected}
+        scrollToRef={scrollToRef}
+        contactRef={contactRef}
+        sponsorRef={sponsorRef}
+        aboutRef={aboutRef}
+        guestsRef={guestsRef}
+        packsRef={packsRef}
+        scheduleRef={scheduleRef}
+        alumniRef={alumniRef}
+        faqRef={faqRef}
+        workshopsRef={workshopsRef}
+      />
+      <Landing aboutRef={aboutRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <About aboutBottomRef={aboutBottomRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Logos setSideNavBarStatus={setSideNavBarStatus} />
+      <Guests guestsRef={guestsRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Quotes setSideNavBarStatus={setSideNavBarStatus} />
+      <Pack packsRef={packsRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Schedule scheduleRef={scheduleRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <TechEvents workshopsRef={workshopsRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <NonTechEvents setSideNavBarStatus={setSideNavBarStatus} />
+      <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Contact contactRef={contactRef} setSideNavBarStatus={setSideNavBarStatus} />
     </Layout>
   );
 }

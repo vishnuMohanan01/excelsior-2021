@@ -2,21 +2,76 @@ import * as React from "react";
 import * as guestsStyles from './guests.module.css';
 import { StaticImage } from "gatsby-plugin-image"
 
-import guestBackImg from "../../images/guests-back.svg";
+import guestBackImg from "../../images/guests-head.svg";
+import guest1 from "../../images/guests/guest.svg";
 
-const Guests = () => {
+
+const Guests = ({guestsRef, setSideNavBarStatus}) => {
   return (
-    <div className={guestsStyles.container}>
+    <div ref={guestsRef} className={guestsStyles.container} onClick={() => setSideNavBarStatus(false)}>
       <div className={guestsStyles.header}>
         <img
           src={guestBackImg}
           alt={"guests"}
           className={guestsStyles.guestsHeadBack}
         />
-        <div className={guestsStyles.guestHeadTextContainer}>GUESTS</div>
       </div>
-      <div>
-        {/*TODO: Here Goes the guest images*/}
+      <div className={guestsStyles.bodyContainer}>
+        <div className={guestsStyles.card}>
+          <img
+            src={guest1}
+            alt={"Guests Name"}
+            className={guestsStyles.cardImage}
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Guest Name</div>
+            <div className={guestsStyles.guestDesignation}>Designation of guest</div>
+          </div>
+        </div>
+        <div className={guestsStyles.card}>
+          <img
+            src={guest1}
+            alt={"Guests Name"}
+            className={guestsStyles.cardImage}
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Guest Name</div>
+            <div className={guestsStyles.guestDesignation}>Designation of guest</div>
+          </div>
+        </div>
+        <div className={guestsStyles.card}>
+          <img
+            src={guest1}
+            alt={"Guests Name"}
+            className={guestsStyles.cardImage}
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Guest Name</div>
+            <div className={guestsStyles.guestDesignation}>Designation of guest</div>
+          </div>
+        </div>
+        <div className={guestsStyles.card}>
+          <img
+            src={guest1}
+            alt={"Guests Name"}
+            className={guestsStyles.cardImage}
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Guest Name</div>
+            <div className={guestsStyles.guestDesignation}>Designation of guest</div>
+          </div>
+        </div>
+        <div className={guestsStyles.card}>
+          <img
+            src={guest1}
+            alt={"Guests Name"}
+            className={guestsStyles.cardImage}
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Guest Name</div>
+            <div className={guestsStyles.guestDesignation}>Designation of guest</div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -20,9 +20,9 @@ const Card = ({head, content}) => {
 };
 
 
-const Pack = () => {
+const Pack = ({packsRef, setSideNavBarStatus}) => {
   return (
-    <div className={packStyles.container}>
+    <div ref={packsRef} className={packStyles.container} onClick={() => setSideNavBarStatus(false)}>
       <div className={packStyles.headerContainer}>
         <img
           src={eventsBack}

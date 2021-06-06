@@ -8,15 +8,7 @@
     align-items: flex-start;
     width: 100vw;
     height: auto;
-    margin-bottom: 12rem;
-    /*!*border: 1px solid green;*!*/
-    /*background: url("../../images/mb/ex-back-mb.svg");*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
+    padding-bottom: 2rem;
 }
 
 .exBack {

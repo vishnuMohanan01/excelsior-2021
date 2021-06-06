@@ -3,6 +3,9 @@ import * as sponsorStyles from "./sponsors.module.css";
 import { StaticImage } from "gatsby-plugin-image"
 
 
+import sponsorHeadImg from "../../images/sponsors-head.svg";
+
+
 const Card = ({name, description}) => {
   return (
     <div className={sponsorStyles.card}>
@@ -28,18 +31,14 @@ const SponsorType = () => {
   );
 };
 
-const Sponsors = ({sponsorRef}) => {
+const Sponsors = ({sponsorRef, setSideNavBarStatus}) => {
   return (
-    <div ref={sponsorRef} className={sponsorStyles.container}>
+    <div ref={sponsorRef} className={sponsorStyles.container} onClick={() => setSideNavBarStatus(false)}>
       <div className={sponsorStyles.headerContainer}>
-        <StaticImage
-          src={"../../images/sponsors-head.svg"}
+        <img
+          src={sponsorHeadImg}
           alt={"sponsors"}
-          placeholder={"blurred"}
-          width={835}
-          height={113}
           className={sponsorStyles.sponsorsHeadBack}
-          style={{position: "absolute"}}
         />
         <div className={sponsorStyles.sponsorTextHead}>SPONSORS</div>
       </div>

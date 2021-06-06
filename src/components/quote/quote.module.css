@@ -4,12 +4,12 @@
     margin: 8rem auto 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
 }
 
 .q1 {
-
+    max-width: 80%;
 }
 
 
@@ -23,15 +23,15 @@
     margin-right: auto;
 }
 
-.q1 {
-
+.q2 {
+    max-width: 80%;
 }
 
 @media only screen and (max-width: 768px) {
     .container{
         height: 10rem;
         width: 90%;
-        margin: 8rem auto 0 auto;
+        margin: auto;
     }
 
     .quoteText {
@@ -39,6 +39,21 @@
         font-size: 11px;
         width: 85%;
         text-align: center;
-        margin-top: 2rem;
+    }
+
+    .quoteText:after {
+        content: "   - Nikola Tesla";
+        color: #FFFFFF;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .q2 {
+        max-width: 15%;
+    }
+
+    .q1 {
+        max-width: 15%;
     }
 }

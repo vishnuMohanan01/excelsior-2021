@@ -1,6 +1,5 @@
 import React from "react";
 import * as sideNavStyles from "./sideNavBar.module.css";
-import { StaticImage } from "gatsby-plugin-image"
 
 import headerEx from "../../images/mb/navbar-ex.svg";
 import guestsImg from "../../images/mb/navbar/guests.svg";
@@ -13,11 +12,11 @@ import faqImg from "../../images/mb/navbar/faq.svg";
 import teamImg from "../../images/mb/navbar/team.svg";
 
 
-const SideNavBar = ({sideNavBarStatus}) => {
+const SideNavBar = ({sideNavBarStatus, setSideNavBarStatus, contactRef, sponsorRef, aboutRef, alumniRef, setTabSelected, scrollToRef, packsRef, faqRef, guestsRef, scheduleRef, workshopsRef}) => {
   return (
     (sideNavBarStatus) ?
       <div className={sideNavStyles.container}>
-        <div className={sideNavStyles.header}>
+        <div className={sideNavStyles.header} onClick={() => {setTabSelected("about");scrollToRef(aboutRef);}}>
           <img
             src={headerEx}
             alt={"ex"}
@@ -26,7 +25,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
           <div className={sideNavStyles.navHeaderText}>Excelsior '21</div>
         </div>
         <div className={sideNavStyles.navListContainer}>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("guests");scrollToRef(guestsRef)}}>
             <img
               src={guestsImg}
               alt={"guests"}
@@ -34,7 +33,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             />
             <div className={sideNavStyles.navItemText}>Guests</div>
           </div>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("workshops");scrollToRef(workshopsRef)}}>
             <img
               src={workshopsImg}
               alt={"workshops"}
@@ -42,7 +41,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             />
             <div className={sideNavStyles.navItemText}>Workshops</div>
           </div>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("schedule");scrollToRef(scheduleRef)}}>
             <img
               src={scheduleImg}
               alt={"schedule"}
@@ -50,7 +49,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             />
             <div className={sideNavStyles.navItemText}>Schedule</div>
           </div>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("packs");scrollToRef(packsRef)}}>
             <img
               src={eventImg}
               alt={"events"}
@@ -58,7 +57,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             />
             <div className={sideNavStyles.navItemText}>Events</div>
           </div>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("alumni");scrollToRef(alumniRef)}}>
             <img
               src={alumniImg}
               alt={"alumni"}
@@ -66,7 +65,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             />
             <div className={sideNavStyles.navItemText}>Alumni's Talk</div>
           </div>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("sponsors");scrollToRef(sponsorRef)}}>
             <img
               src={sponsorsImg}
               alt={"sponsors"}
@@ -74,7 +73,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             />
             <div className={sideNavStyles.navItemText}>Sponsors</div>
           </div>
-          <div className={sideNavStyles.navItemContainer}>
+          <div className={sideNavStyles.navItemContainer} onClick={() => {setTabSelected("faq");scrollToRef(faqRef)}}>
             <img
               src={faqImg}
               alt={"faq"}
@@ -83,7 +82,7 @@ const SideNavBar = ({sideNavBarStatus}) => {
             <div className={sideNavStyles.navItemText}>FAQ</div>
           </div>
         </div>
-        <div className={`${sideNavStyles.teamItem}`}>
+        <div className={`${sideNavStyles.teamItem}`} onClick={() => {setTabSelected("contact");scrollToRef(contactRef)}}>
           <img
             src={teamImg}
             alt={"team"}

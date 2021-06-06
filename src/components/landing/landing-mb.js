@@ -9,9 +9,9 @@ import exBack from "../../images/mb/ex-back-mb.svg";
 import cube from "../../images/Point-line triangle cube.svg";
 
 
-const LandingMB = () => {
+const LandingMB = ({setSideNavBarStatus}) => {
   return (
-    <div className={landingMBStyles.container}>
+    <div className={landingMBStyles.container} onClick={() => setSideNavBarStatus(false)}>
       <img
         src={exBack}
         alt="ex"

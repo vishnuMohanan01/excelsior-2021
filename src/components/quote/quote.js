@@ -3,26 +3,24 @@ import * as quoteStyles from './quote.module.css';
 import { StaticImage } from "gatsby-plugin-image"
 
 
-function Quotes() {
+import q1 from "../../images/quote1.svg";
+import q2 from "../../images/quote2.svg";
+
+
+function Quotes({setSideNavBarStatus}) {
   return (
-    <div className={quoteStyles.container}>
-      <StaticImage
-        src={"../../images/quote1.svg"}
+    <div className={quoteStyles.container} onClick={() => setSideNavBarStatus(false)}>
+      <img
+        src={q1}
         alt={"quote"}
-        placeholder={"blurred"}
-        width={188}
-        height={180}
         className={quoteStyles.q1}
       />
       <div className={quoteStyles.quotes}>
-        <p className={quoteStyles.quoteText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <div className={quoteStyles.quoteText}>The present is theirs; the future for which I really worked, is mine</div>
       </div>
-      <StaticImage
-        src={"../../images/quote2.svg"}
+      <img
+        src={q2}
         alt={"quote"}
-        placeholder={"blurred"}
-        width={188}
-        height={180}
         className={quoteStyles.q2}
       />
     </div>

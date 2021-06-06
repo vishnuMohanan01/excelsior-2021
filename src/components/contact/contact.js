@@ -4,23 +4,22 @@ import { StaticImage } from "gatsby-plugin-image"
 import { useForm, ValidationError } from '@formspree/react';
 
 
-const Contact = ({contactRef}) => {
+import excelsiorImg from "../../images/contact-excelsior21.svg";
+
+const Contact = ({contactRef, setSideNavBarStatus}) => {
   const [state, handleSubmit] = useForm("xoqydldj");
   if (state.succeeded) {
     // TODO: show some response
   }
 
   return (
-    <div className={contactStyles.container} ref={contactRef} >
+    <div className={contactStyles.container} ref={contactRef} onClick={() => setSideNavBarStatus(false)} >
       <div className={contactStyles.leftContainer}>
         <div className={contactStyles.leftHeader}>
           <div className={contactStyles.leftHeaderText}>Team</div>
-          <StaticImage
-            src={"../../images/contact-excelsior21.svg"}
+          <img
+            src={excelsiorImg}
             alt={"excelsior21"}
-            placeholder={"blurred"}
-            width={354}
-            height={64}
             className={contactStyles.leftHeadExcelsior21}
           />
         </div>

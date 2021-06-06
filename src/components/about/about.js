@@ -11,9 +11,9 @@ import cubeImg from "../../images/Point-line triangle cube.svg";
 import bigCubeImg from "../../images/Big Point-line triangle cube.svg";
 
 
-const About = ({aboutBottomRef}) => {
+const About = ({aboutBottomRef, setSideNavBarStatus}) => {
   return (
-    <div ref={aboutBottomRef} className={aboutStyles.container}>
+    <div ref={aboutBottomRef} className={aboutStyles.container} onClick={() => setSideNavBarStatus(false)}>
       <div className={aboutStyles.leftContainer}>
         <div className={aboutStyles.leftHead}>
           <img
