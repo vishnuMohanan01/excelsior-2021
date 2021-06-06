@@ -25,13 +25,13 @@
 .excelsior21Image {
     position: absolute;
     top: 130px;
-    left: 558px;
+    left: 590px;
 }
 
 .ex21 {
     position: absolute;
     top: 160px;
-    left: 460px;
+    left: 520px;
 }
 
 .riseTextContainer {
@@ -42,60 +42,59 @@
     font-weight: 100;
     position: absolute;
     top: 350px;
-    left: 500px;
+    left: 570px;
 }
 .riseQuotes {
     display: none;
-    /*margin-right: 4px;*/
     color: #fff;
     font-size: 40px;
     font-weight: 500;
 }
 .riseText {
-    /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Poppins', sans-serif;
-    /*margin-right: 4px;*/
     color: #fff;
     font-size: 40px;
     font-weight: 100;
 }
 
-.regNowBorder {
-    position: absolute;
+.regNowRect {
     top: 430px;
-    left: 560px;
-}
-
-.regNowLinkContainer {
-    width: 270px;
-    height: 40px;
+    left: 610px;
     position: absolute;
-    top: 434px;
-    left: 568px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    text-decoration: none;
+    margin: 0 0 0 1.5rem;
+    border: solid 2px transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(#292929, #292929), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    align-self: center;
+    z-index: 98;
     outline: none;
-    transition: 0.4s all;
+    transition: 0.2s all;
+    height: 2rem;
+    width: 14rem;
 }
 
-.regNowLinkContainer:hover {
-    background-color: #343434;
+.regNowRect:hover {
+    outline: none;
+    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
 }
 
-.regNowLinkContainer:active {
-    background-color: #323232;
+.regNowRect:active {
+    outline: none;
+    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
 }
 
 .regNowLink {
+    position: absolute;
+    font-weight: 500;
+    /*padding: 2rem 3rem;*/
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     outline: none;
-    color: #fff;
+    /*margin: 8px auto auto auto;*/
+    margin: auto 3rem;
 }
 
 .cube1 {
@@ -111,6 +110,7 @@
 }
 
 .cube3 {
+    max-width: 10%;
     position: absolute;
     top: 120px;
     left:300px;

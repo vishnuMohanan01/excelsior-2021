@@ -8,18 +8,22 @@
 }
 
 .headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .sponsorsHeadBack {
-    position: relative;
 }
 
 .sponsorTextHead {
-    color: #fff;
-    font-size: 65px;
-    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin: 4rem 0 0 2rem;
+    color: white;
     font-weight: 800;
-    margin: 4rem 0 0 3rem;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .typeContainer {

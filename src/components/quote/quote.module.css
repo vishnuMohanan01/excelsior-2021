@@ -23,6 +23,13 @@
     margin-right: auto;
 }
 
+.quoteText:after {
+    content: "   - Nikola Tesla";
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
 .q2 {
     max-width: 80%;
 }

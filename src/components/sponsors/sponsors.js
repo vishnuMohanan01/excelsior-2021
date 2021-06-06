@@ -46,7 +46,7 @@ const Sponsors = ({sponsorRef, setSideNavBarStatus}) => {
 
   return (
     <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={sponsorRef} className={sponsorStyles.container} onClick={() => setSideNavBarStatus(false)}>
-      <div className={sponsorStyles.headerContainer} data-aos-once="true" data-aos="zoom-in" data-aos-duration="800">
+      <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" className={sponsorStyles.headerContainer}>
         <img
           src={sponsorHeadImg}
           alt={"sponsors"}

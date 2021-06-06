@@ -1,7 +1,5 @@
 import React from "react";
 import * as landingMBStyles from "./landingMB.module.css";
-import { StaticImage } from "gatsby-plugin-image"
-import * as landingStyles from "./landing.module.css"
 
 import ex21 from "../../images/mb/ex21.svg";
 import excelsior21 from "../../images/excelsior21-front-dt.svg";

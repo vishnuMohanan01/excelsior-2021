@@ -1,12 +1,11 @@
 import * as React from 'react';
 import * as packStyles from './packs.module.css';
-import { StaticImage } from "gatsby-plugin-image"
 
 import eventsBack from "../../images/events-back.svg";
 import cubeLarge from "../../images/events-cube-large.svg";
 import cubeSmall from "../../images/events-cube-small.svg";
-import { useEffect } from "react"
-import AOS from "aos"
+import { useEffect } from "react";
+import AOS from "aos";
 
 
 const Card = ({head, content}) => {
@@ -34,7 +33,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
 
   return (
     <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={packsRef} className={packStyles.container} onClick={() => setSideNavBarStatus(false)}>
-      <div className={packStyles.headerContainer} data-aos-once="true" data-aos="zoom-in" data-aos-duration="800">
+      <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" className={packStyles.headerContainer}>
         <img
           src={eventsBack}
           alt={"events"}
