@@ -6,7 +6,7 @@ import headerEx from "../../images/mb/header-ex-logo.svg";
 import hamburgerButton from "../../images/mb/hamburger-blue.svg";
 
 
-const HeaderNavBarMB = ({setSideNavBarStatus}) => {
+const HeaderNavBarMB = ({setSideNavBarStatus, sideNavBarStatus}) => {
 
   return (
     <div className={`${headerMBStyles.mobileVersion} ${headerMBStyles.container}`}>
@@ -17,12 +17,12 @@ const HeaderNavBarMB = ({setSideNavBarStatus}) => {
           className={headerMBStyles.exLogo}
         />
       </a>
-      <img
+      {(!sideNavBarStatus) ? <img
         src={hamburgerButton}
         alt={"menu"}
         className={headerMBStyles.hamburger}
         onClick={() => {setSideNavBarStatus(true)}}
-        />
+        />:null}
     </div>
   );
 };

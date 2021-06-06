@@ -4,12 +4,19 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import guestBackImg from "../../images/guests-head.svg";
 import guest1 from "../../images/guests/guest.svg";
+import { useEffect } from "react"
+import AOS from "aos"
 
 
 const Guests = ({guestsRef, setSideNavBarStatus}) => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div ref={guestsRef} className={guestsStyles.container} onClick={() => setSideNavBarStatus(false)}>
-      <div className={guestsStyles.header}>
+    <div  data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={guestsRef} className={guestsStyles.container} onClick={() => setSideNavBarStatus(false)}>
+      <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="800" className={guestsStyles.header}>
         <img
           src={guestBackImg}
           alt={"guests"}
@@ -22,6 +29,7 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
             src={guest1}
             alt={"Guests Name"}
             className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
           />
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Guest Name</div>
@@ -33,6 +41,7 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
             src={guest1}
             alt={"Guests Name"}
             className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
           />
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Guest Name</div>
@@ -44,6 +53,7 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
             src={guest1}
             alt={"Guests Name"}
             className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
           />
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Guest Name</div>
@@ -55,6 +65,7 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
             src={guest1}
             alt={"Guests Name"}
             className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
           />
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Guest Name</div>
@@ -66,6 +77,7 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
             src={guest1}
             alt={"Guests Name"}
             className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
           />
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Guest Name</div>

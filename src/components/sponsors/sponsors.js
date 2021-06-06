@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react"
 import * as sponsorStyles from "./sponsors.module.css";
 import { StaticImage } from "gatsby-plugin-image"
 
 
 import sponsorHeadImg from "../../images/sponsors-head.svg";
+import AOS from "aos"
 
 
 const Card = ({name, description}) => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className={sponsorStyles.card}>
-      <div></div>
+      <div data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500">
+
+      </div>
       <div className={sponsorStyles.cardName}>{name}</div>
       <div className={sponsorStyles.cardDescription}>{description}</div>
     </div>
@@ -32,9 +40,13 @@ const SponsorType = () => {
 };
 
 const Sponsors = ({sponsorRef, setSideNavBarStatus}) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div ref={sponsorRef} className={sponsorStyles.container} onClick={() => setSideNavBarStatus(false)}>
-      <div className={sponsorStyles.headerContainer}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={sponsorRef} className={sponsorStyles.container} onClick={() => setSideNavBarStatus(false)}>
+      <div className={sponsorStyles.headerContainer} data-aos-once="true" data-aos="zoom-in" data-aos-duration="800">
         <img
           src={sponsorHeadImg}
           alt={"sponsors"}

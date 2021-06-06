@@ -69,6 +69,7 @@ const IndexPage = () => {
               scheduleRef={scheduleRef}
               alumniRef={alumniRef}
               faqRef={faqRef}
+              sideNavBarStatus={sideNavBarsStatus}
       />
       <SideNavBar
         sideNavBarStatus={sideNavBarsStatus}

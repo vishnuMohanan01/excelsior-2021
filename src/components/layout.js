@@ -9,6 +9,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 
 import "./layout.css"
+import "aos/dist/aos.css";
 
 const Layout = ({ children }) => {
 

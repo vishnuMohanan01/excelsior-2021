@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as aboutStyles from "./about.module.css";
-import { StaticImage } from "gatsby-plugin-image"
 
 
 import whatIsExBackImg from "../../images/what-is-excelsior-back.svg";
@@ -8,12 +7,18 @@ import excelsior21Img from "../../images/what-is-excelsior-front.svg";
 import aboutBigEx from "../../images/about-ex.svg";
 import riseTextImg from "../../images/Rise-Above-The-Rest.svg";
 import cubeImg from "../../images/Point-line triangle cube.svg";
-import bigCubeImg from "../../images/Big Point-line triangle cube.svg";
+import { useEffect } from "react"
+import AOS from "aos"
+
 
 
 const About = ({aboutBottomRef, setSideNavBarStatus}) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div ref={aboutBottomRef} className={aboutStyles.container} onClick={() => setSideNavBarStatus(false)}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={aboutBottomRef} className={aboutStyles.container} onClick={() => setSideNavBarStatus(false)}>
       <div className={aboutStyles.leftContainer}>
         <div className={aboutStyles.leftHead}>
           <img

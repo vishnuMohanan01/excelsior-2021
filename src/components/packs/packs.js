@@ -5,11 +5,17 @@ import { StaticImage } from "gatsby-plugin-image"
 import eventsBack from "../../images/events-back.svg";
 import cubeLarge from "../../images/events-cube-large.svg";
 import cubeSmall from "../../images/events-cube-small.svg";
+import { useEffect } from "react"
+import AOS from "aos"
 
 
 const Card = ({head, content}) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className={packStyles.card}>
+    <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
       <div className={packStyles.cardHead}>{head}</div>
       <div className={packStyles.cardBody}>
 
@@ -21,9 +27,14 @@ const Card = ({head, content}) => {
 
 
 const Pack = ({packsRef, setSideNavBarStatus}) => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div ref={packsRef} className={packStyles.container} onClick={() => setSideNavBarStatus(false)}>
-      <div className={packStyles.headerContainer}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={packsRef} className={packStyles.container} onClick={() => setSideNavBarStatus(false)}>
+      <div className={packStyles.headerContainer} data-aos-once="true" data-aos="zoom-in" data-aos-duration="800">
         <img
           src={eventsBack}
           alt={"events"}

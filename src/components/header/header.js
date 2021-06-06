@@ -41,7 +41,7 @@ const HeaderNavBar = ({tabSelected, setTabSelected, scrollToRef, aboutRef, conta
 );
 
 
-const Header = ({setSideNavBarStatus, tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
+const Header = ({sideNavBarStatus, setSideNavBarStatus, tabSelected, setTabSelected, scrollToRef, aboutRef, contactRef, sponsorRef}) => (
   <div className={headerStyles.container}>
     <HeaderNavBar
       tabSelected={tabSelected}
@@ -57,6 +57,7 @@ const Header = ({setSideNavBarStatus, tabSelected, setTabSelected, scrollToRef, 
       contactRef={contactRef}
       sponsorRef={sponsorRef}
       aboutRef={aboutRef}
+      sideNavBarStatus={sideNavBarStatus}
     />
   </div>
 )

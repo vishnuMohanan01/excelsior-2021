@@ -1,12 +1,16 @@
 import * as React from "react";
 import * as contactStyles from "./contact.module.css";
-import { StaticImage } from "gatsby-plugin-image"
 import { useForm, ValidationError } from '@formspree/react';
 
 
 import excelsiorImg from "../../images/contact-excelsior21.svg";
+import { useEffect } from "react"
+import AOS from "aos"
 
 const Contact = ({contactRef, setSideNavBarStatus}) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [state, handleSubmit] = useForm("xoqydldj");
   if (state.succeeded) {
     // TODO: show some response
@@ -14,8 +18,8 @@ const Contact = ({contactRef, setSideNavBarStatus}) => {
 
   return (
     <div className={contactStyles.container} ref={contactRef} onClick={() => setSideNavBarStatus(false)} >
-      <div className={contactStyles.leftContainer}>
-        <div className={contactStyles.leftHeader}>
+      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" className={contactStyles.leftContainer}>
+        <div className={contactStyles.leftHeader} data-aos-once="true" data-aos="zoom-in" data-aos-duration="800">
           <div className={contactStyles.leftHeaderText}>Team</div>
           <img
             src={excelsiorImg}
@@ -37,7 +41,7 @@ const Contact = ({contactRef, setSideNavBarStatus}) => {
           </div>
         </div>
       </div>
-      <div className={contactStyles.rightContainer}>
+      <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" className={contactStyles.rightContainer}>
         <div className={contactStyles.rightHeader}>
           <div className={contactStyles.enquiryHead}>Enquiry</div>
           <div className={contactStyles.enquiryText}>Stick to us if you have any queries. We don't want you have any concerns. Our volunteer will get in touch with you as early as possible.
