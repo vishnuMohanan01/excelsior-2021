@@ -22,7 +22,7 @@ const Footer = () => {
           <div className={footerStyles.excelsiorHead}>Excelsior'21</div>
         </div>
         <div className={footerStyles.rightsReserved}>
-          © 2021. IEEE SB GEC Palakkad. All Right Reserved.
+          © 2021. IEEE SB GEC Palakkad. All Rights Reserved.
         </div>
       </div>
       <div className={`${footerStyles.division} ${footerStyles.two}`}>

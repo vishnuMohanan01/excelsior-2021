@@ -8,22 +8,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 
 
-const Card = ({head, content}) => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
-  return (
-    <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
-      <div className={packStyles.cardHead}>{head}</div>
-      <div className={packStyles.cardBody}>
-
-      </div>
-      <div className={packStyles.registerButton}><span>Register Now</span></div>
-    </div>
-  );
-};
-
 
 const Pack = ({packsRef, setSideNavBarStatus}) => {
 
@@ -49,9 +33,27 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
       <div className={packStyles.packsBody}>
         <div className={packStyles.packsHead}>Best Shots For You</div>
         <div className={packStyles.cardsContainer}>
-          <Card head={"Economy"} />
-          <Card head={"Essentials"} />
-          <Card head={"Premium"} />
+          <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
+            <div className={packStyles.cardHead}>Premium</div>
+            <div className={packStyles.cardBody}>
+
+            </div>
+            <a href={"https://www.google.com"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
+          </div>
+          <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
+            <div className={packStyles.cardHead}>Essentials</div>
+            <div className={packStyles.cardBody}>
+
+            </div>
+            <a href={"https://www.google.com"} target={"_blank"}  className={packStyles.registerButton}><span>Register Now</span></a>
+          </div>
+          <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
+            <div className={packStyles.cardHead}>Economy</div>
+            <div className={packStyles.cardBody}>
+
+            </div>
+            <a href={"https://www.google.com"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
+          </div>
         </div>
         <img
           src={cubeSmall}
