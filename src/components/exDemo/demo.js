@@ -1,11 +1,11 @@
 import * as React from "react";
-import * as eventStyles from "../techEvents/techEvents.module.css"
+import * as eventStyles from "./techEvents.module.css"
 
-const nonTechEvents = () => {
+const demo = () => {
     return (
-        <div>
+        <div style={{marginBottom: "2rem"}}>
             <p className={eventStyles.heading}>
-                <h2 className={eventStyles.header}>Non-Technical</h2>
+                <h2 className={eventStyles.header}>Technical</h2>
                 <h3 className={eventStyles.subHeader}>Events</h3>
             </p>
             <div className={eventStyles.gridContainer}>
@@ -61,4 +61,4 @@ const nonTechEvents = () => {
     )
 }
 
-export default nonTechEvents;
+export default demo;
