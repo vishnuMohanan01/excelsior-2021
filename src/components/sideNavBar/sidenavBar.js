@@ -1,5 +1,8 @@
 import React from "react";
 import * as sideNavStyles from "./sideNavBar.module.css";
+import styled, { keyframes } from 'styled-components';
+import { flipInY } from 'react-animations';
+
 
 import headerEx from "../../images/mb/navbar-ex.svg";
 import guestsImg from "../../images/mb/navbar/guests.svg";
@@ -11,11 +14,17 @@ import sponsorsImg from "../../images/mb/navbar/sponsors.svg";
 import faqImg from "../../images/mb/navbar/faq.svg";
 import teamImg from "../../images/mb/navbar/team.svg";
 
+const sideNavAnimation = keyframes`${flipInY}`;
+
+const SideNavDiv = styled.div`
+  opacity: 0.9;
+  animation: 0.6s ${sideNavAnimation};
+`;
 
 const SideNavBar = ({sideNavBarStatus, setSideNavBarStatus, contactRef, sponsorRef, aboutRef, alumniRef, setTabSelected, scrollToRef, packsRef, faqRef, guestsRef, scheduleRef, workshopsRef}) => {
   return (
     (sideNavBarStatus) ?
-      <div className={sideNavStyles.container}>
+      <SideNavDiv className={sideNavStyles.container}>
         <div className={sideNavStyles.header} onClick={() => {setTabSelected("about");scrollToRef(aboutRef);}}>
           <img
             src={headerEx}
@@ -90,7 +99,7 @@ const SideNavBar = ({sideNavBarStatus, setSideNavBarStatus, contactRef, sponsorR
           />
           <div className={sideNavStyles.navItemText}>Team & Enquiry</div>
         </div>
-      </div> : null
+      </SideNavDiv> : null
   );
 };
 
