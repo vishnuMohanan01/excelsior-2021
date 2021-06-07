@@ -19,6 +19,8 @@ import FAQ from "../components/faq"
 import Events from "../components/alumnisTalk"
 import SideNavBar from "../components/sideNavBar"
 import Logos from "../components/logos"
+import Footer from "../components/footer"
+
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
@@ -99,6 +101,7 @@ const IndexPage = () => {
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
       <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Contact contactRef={contactRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Footer setSideNavBarStatus={setSideNavBarStatus} />
     </Layout>
   );
 }

@@ -1,0 +1,232 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 4rem;
+    border-top: 1px solid #fff;
+    width: 90%;
+    margin: auto auto 0 auto;
+}
+
+.division {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.divisionHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.exLogoLink {
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.exLogo {
+    max-width: 50%;
+}
+
+.excelsiorHead {
+    margin-top: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 21px;
+    margin-bottom: auto;
+}
+
+.rightsReserved {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.sbChapters {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.societyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.societyHead {
+    line-height: 19px;
+    opacity: 0.7;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 4rem;
+}
+
+.instaImg {
+    max-width: 70%;
+}
+
+.linkedInImg {
+    max-width: 70%;
+}
+
+.sbContent {
+    margin-bottom: 3.8rem;
+}
+
+.instaImgSB {
+
+}
+
+.linkedInImgSB {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*.desktopVersion {*/
+    /*    display: none;*/
+    /*}*/
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .division {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .divisionHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exLogoLink {
+        align-self: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .exLogo {
+        max-width: 50%;
+    }
+
+    .excelsiorHead {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        font-size: 21px;
+        margin-bottom: auto;
+    }
+
+    .rightsReserved {
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        opacity: 0.7;
+    }
+
+    .sbChapters {
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .societyContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+    }
+
+    .societyHead {
+        line-height: 19px;
+        opacity: 0.7;
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 0.5rem;
+    }
+
+    .socialIcons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 4rem;
+    }
+
+    .instaImg {
+        max-width: 70%;
+    }
+
+    .linkedInImg {
+        max-width: 70%;
+    }
+
+    .sbContent {
+        margin-bottom: 1rem;
+    }
+
+    .sbIcons {
+        width: 50%;
+    }
+
+    .instaImgSB {
+
+    }
+
+    .linkedInImgSB {
+
+    }
+
+    .one {
+        order: 4;
+        padding-bottom: 3rem;
+    }
+
+    .two {
+        order: 2;
+    }
+
+    .three {
+        order: 3;
+    }
+
+    .four {
+        order: 1;
+    }
+
+}
+
+
+
