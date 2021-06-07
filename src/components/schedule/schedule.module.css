@@ -17,9 +17,25 @@
     margin: 6rem auto 0 auto;
 }
 
+.desktopVersion {
+    display: flex;
+}
+
+.mobileVersion {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .container {
         margin: 0 auto 0 auto;
         padding-top: 8rem;
+    }
+
+    .desktopVersion {
+        display: none;
+    }
+
+    .mobileVersion {
+        display: flex;
     }
 }
