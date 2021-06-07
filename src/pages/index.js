@@ -7,8 +7,6 @@ import Landing from "../components/landing"
 import About from "../components/about"
 import Guests from "../components/guests"
 import Contact from "../components/contact"
-import TechEvents from "../components/techEvents"
-import NonTechEvents from "../components/sample"
 import Pack from "../components/packs"
 import { useEffect, useRef, useState } from "react"
 import Header from "../components/header"
@@ -19,8 +17,17 @@ import FAQ from "../components/faq"
 import Events from "../components/alumnisTalk"
 import SideNavBar from "../components/sideNavBar"
 import Logos from "../components/logos"
+<<<<<<< HEAD
 import Footer from "../components/footer"
 
+=======
+import Learn from "../components/exLearn"
+import Talks from "../components/exTalks"
+import Demo from "../components/exDemo"
+import Chords from "../components/exChords"
+import Psych from "../components/exPsych"
+import Scholar from "../components/exScholar"
+>>>>>>> mobile view updated
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
@@ -95,8 +102,13 @@ const IndexPage = () => {
       <Quotes setSideNavBarStatus={setSideNavBarStatus} />
       <Pack packsRef={packsRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Schedule scheduleRef={scheduleRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <TechEvents workshopsRef={workshopsRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <NonTechEvents setSideNavBarStatus={setSideNavBarStatus} />
+      <Learn></Learn>
+      <Talks></Talks>
+      <Demo></Demo>
+      <Chords></Chords>
+      <Psych></Psych>
+      <Scholar></Scholar>
+      <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />

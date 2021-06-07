@@ -9,7 +9,7 @@ const Demo = () => {
     return (
         <div style={{marginBottom: "2rem", paddingTop:"4rem"}}>
             <p className={styles.heading}>
-                <h2 className={styles.header}>Ex-Scholar</h2>
+                <h2 className={styles.header}>Ex-Chords</h2>
             </p>
             <div className={styles.container}>
                     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">

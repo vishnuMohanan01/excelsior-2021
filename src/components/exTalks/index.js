@@ -1,3 +1,3 @@
-import TechEvents from "./techEvents";
+import Talks from "./talks";
 
-export default TechEvents;
+export default Talks;

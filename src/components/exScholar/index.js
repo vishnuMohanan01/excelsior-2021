@@ -1,3 +1,3 @@
-import Scholar from "./nonTechEvents";
+import Scholar from "./scholar";
 
 export default Scholar;

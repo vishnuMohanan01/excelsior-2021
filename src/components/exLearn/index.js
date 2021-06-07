@@ -1,3 +1,3 @@
-import Learn from "./techEvents";
+import Learn from "./learn";
 
 export default Learn;

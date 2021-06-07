@@ -1,3 +1,3 @@
-import Demo from "./techEvents";
+import Demo from "./demo";
 
 export default Demo;

@@ -1,3 +1,3 @@
-import Psych from "./techEvents";
+import Psych from "./psych";
 
 export default Psych;
