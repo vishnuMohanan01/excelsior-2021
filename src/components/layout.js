@@ -20,19 +20,9 @@ const Layout = ({ children }) => {
 
       <div
         style={{
-          // maxWidth: 960,
         }}
       >
         <main>{children}</main>
-        {/*<footer*/}
-        {/*  style={{*/}
-        {/*    marginTop: `2rem`,*/}
-        {/*  }}*/}
-        {/*>*/}
-        {/*  © {new Date().getFullYear()}, Built at*/}
-        {/*  {` `}*/}
-        {/* IEEE SB GEC Palakkad*/}
-        {/*</footer>*/}
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Excelsior'21`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Exclesior 2021 is the third emphasis of the flagship event of IEEE SB GEC PALAKKAD. It is usually conducted at Government Engineering College, Sreekrishnapuram, Palakkad every year, lasts for a period of nearly 4 days. Participation of about 200 vibrant technophiles,the event marks a techno enthusiasts fortune moment to get involved in culmination of information, inspiration and association.`,
     author: `Vishnu Mohanan`,
   },
   plugins: [
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#292929`,
         theme_color: `#292929`,
         display: `minimal-ui`,
-        icon: `src/images/about-ex.svg`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
