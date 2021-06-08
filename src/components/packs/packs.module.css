@@ -197,7 +197,7 @@
         display: none;
         z-index: 97;
         position: absolute;
-        right: -5rem;
+        top: -4rem;
     }
 
     .packsBody {
@@ -315,9 +315,8 @@
 
     .cubeSmall {
         position: absolute;
-        margin-top: 15rem;
+        margin-top: 12rem;
         left: 0;
         z-index: 0;
     }
-
 }
