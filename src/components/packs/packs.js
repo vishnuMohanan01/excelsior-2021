@@ -36,21 +36,42 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
           <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
             <div className={packStyles.cardHead}>Premium</div>
             <div className={packStyles.cardBody}>
-
+              <div className={packStyles.cardBodyContent}>Brings to you a band of workshop, talks and goodies</div>
+              <div className={packStyles.tagName}>Workshop + All talks + Goodies</div>
+              <div className={packStyles.ratesContainer}>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>100 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>149 /-</strong></div>
+                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>149 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>229 /-</strong></div>
+              </div>
             </div>
             <a href={"https://www.google.com"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
           <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
             <div className={packStyles.cardHead}>Essentials</div>
             <div className={packStyles.cardBody}>
-
+              <div className={packStyles.cardBodyContent}>Awards you all talks</div>
+              <div className={packStyles.tagName}>All Talks</div>
+              <div className={packStyles.ratesContainer}>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>59 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>99 /-</strong></div>
+                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>99 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>119 /-</strong></div>
+              </div>
             </div>
             <a href={"https://www.google.com"} target={"_blank"}  className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
           <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
             <div className={packStyles.cardHead}>Economy</div>
             <div className={packStyles.cardBody}>
-
+              <div className={packStyles.cardBodyContent}>Grab a talk of your passion</div>
+              <div className={packStyles.tagName}>Pick any talks</div>
+              <div className={packStyles.ratesContainer}>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>20 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>25 /-</strong></div>
+                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>25 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>30/-</strong></div>
+              </div>
             </div>
             <a href={"https://www.google.com"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
