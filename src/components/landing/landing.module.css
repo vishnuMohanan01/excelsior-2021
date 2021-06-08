@@ -88,13 +88,11 @@
 .regNowLink {
     position: absolute;
     font-weight: 500;
-    /*padding: 2rem 3rem;*/
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     outline: none;
-    /*margin: 8px auto auto auto;*/
-    margin: auto 3rem;
+    margin: 3px 3rem;
 }
 
 .cube1 {

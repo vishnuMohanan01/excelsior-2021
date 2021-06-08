@@ -32,14 +32,14 @@ const Footer = () => {
         <div className={footerStyles.societyContainer}>
           <div className={footerStyles.societyHead}>Computer Society</div>
           <div className={footerStyles.socialIcons}>
-            <a href="">
+            <a href="https://instagram.com/ieeecsgecpkd?igshid=1tf9nzps6ta1a" target={"_blank"}>
               <img
                 src={instaImg}
                 alt="insta"
                 className={footerStyles.instaImg}
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/ieee-cs-sbc-gec-palakkad" target={"_blank"}>
               <img
                 src={linkedInImg}
                 alt="linkedIn"
@@ -51,14 +51,14 @@ const Footer = () => {
         <div className={footerStyles.societyContainer}>
           <div className={footerStyles.societyHead}>Industry Application Society</div>
           <div className={footerStyles.socialIcons}>
-            <a href="">
+            <a href="https://instagram.com/ieeeiasgecpkd?igshid=e2x3fsk0l050" target={"_blank"}>
               <img
                 src={instaImg}
                 alt="insta"
                 className={footerStyles.instaImg}
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/ias-sb-chapter-gec-palakkad" target={"_blank"}>
               <img
                 src={linkedInImg}
                 alt="linkedIn"
@@ -75,14 +75,14 @@ const Footer = () => {
         <div className={footerStyles.societyContainer}>
           <div className={footerStyles.societyHead}>Women In Engineering</div>
           <div className={footerStyles.socialIcons}>
-            <a href="">
+            <a href="https://instagram.com/wie_gec_palakkad?igshid=awb71kltqp3u" target={"_blank"}>
               <img
                 src={instaImg}
                 alt="insta"
                 className={footerStyles.instaImg}
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/ieee-wie-gec-palakkad" target={"_blank"}>
               <img
                 src={linkedInImg}
                 alt="linkedIn"
@@ -99,14 +99,14 @@ const Footer = () => {
         <div className={footerStyles.societyContainer}>
           <div className={`${footerStyles.societyHead} ${footerStyles.sbContent}`}>Questions or Feedbacks ?<br />We'd love to hear from you.</div>
           <div className={`${footerStyles.socialIcons} ${footerStyles.sbIcons}`}>
-            <a href="">
+            <a href="" target={"_blank"}>
               <img
                 src={instaImgWhite}
                 alt="insta"
                 className={footerStyles.instaImgSB}
               />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/ieeesbgecpkd"  target={"_blank"}>
               <img
                 src={linkedInImgWhite}
                 alt="linkedIn"

@@ -36,14 +36,6 @@ const Landing = ({aboutRef, setSideNavBarStatus}) => {
             <div className={landingStyles.riseTextContainer}>
                 <span className={landingStyles.riseQuotes}>"</span><span className={landingStyles.riseText}>Rise above the rest</span><span className={landingStyles.riseQuotes}>"</span>
             </div>
-            {/*<img*/}
-            {/*  src={regNowBorder}*/}
-            {/*  alt={"reg now"}*/}
-            {/*  className={landingStyles.regNowBorder}*/}
-            {/*/>*/}
-            {/*<a href={"https://www.google.com"} target={'_blank'} className={`${landingStyles.regNowLinkContainer} ${landingStyles.regNowLink}`}>*/}
-            {/*    <span>Register Now</span>*/}
-            {/*</a>*/}
           <div className={landingStyles.regNowRect}>
             <a href={"https://www.google.com"} target={"_blank"} className={landingStyles.regNowLink}>Register Now</a>
           </div>
