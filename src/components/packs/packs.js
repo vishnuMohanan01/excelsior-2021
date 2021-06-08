@@ -51,7 +51,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
             <div className={packStyles.cardHead}>Essentials</div>
             <div className={packStyles.cardBody}>
               <div className={packStyles.cardBodyContent}>Awards you all talks</div>
-              <div className={packStyles.tagName}>All Talks</div>
+              <div className={packStyles.tagName}>All talks</div>
               <div className={packStyles.ratesContainer}>
                 <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 59 /-</strong></div>
                 <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>Rs 99 /-</strong></div>
@@ -65,7 +65,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
             <div className={packStyles.cardHead}>Economy</div>
             <div className={packStyles.cardBody}>
               <div className={packStyles.cardBodyContent}>Grab a talk of your passion</div>
-              <div className={packStyles.tagName}>Pick any talks</div>
+              <div className={packStyles.tagName}>Pick your talk choice</div>
               <div className={packStyles.ratesContainer}>
                 <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 20 /-</strong></div>
                 <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>Rs 25 /-</strong></div>
