@@ -41,6 +41,8 @@
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .cardImage {
@@ -102,6 +104,9 @@
     }
 
     .card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 1rem;
         flex-direction: row;
         justify-content: flex-start;
@@ -114,6 +119,7 @@
 
     .cardText {
         text-align: center;
+        width: 70%;
     }
 
     .guestName {

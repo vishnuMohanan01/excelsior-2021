@@ -9,7 +9,7 @@ import linkedInImgWhite from "../../images/footer/linkedInWhite.svg";
 
 const Footer = () => {
   return (
-    <div className={footerStyles.container}>
+    <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" className={footerStyles.container}>
       <div className={`${footerStyles.division} ${footerStyles.one} ${footerStyles.desktopVersion}`}>
         <div className={footerStyles.divisionHead}>
           <a href="/" className={footerStyles.exLogoLink}>

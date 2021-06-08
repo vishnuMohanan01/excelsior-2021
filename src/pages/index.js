@@ -97,8 +97,8 @@ const IndexPage = () => {
       <Schedule scheduleRef={scheduleRef} setSideNavBarStatus={setSideNavBarStatus} />
       <TechEvents workshopsRef={workshopsRef} setSideNavBarStatus={setSideNavBarStatus} />
       <NonTechEvents setSideNavBarStatus={setSideNavBarStatus} />
-      <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Contact contactRef={contactRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Footer setSideNavBarStatus={setSideNavBarStatus} />

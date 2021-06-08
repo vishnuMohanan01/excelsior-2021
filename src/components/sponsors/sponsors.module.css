@@ -5,6 +5,7 @@
     align-items: start;
     justify-content: start;
     padding-top: 2rem;
+    padding-bottom: 5rem;
 }
 
 .headerContainer {
@@ -60,6 +61,10 @@
     align-items: center;
 }
 
+.sponsorImage {
+    max-width: 75%;
+}
+
 .cardName {
     font-family: 'Poppins', sans-serif;
     font-size: 27px;
@@ -69,6 +74,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-align: center;
+    font-size: 15px;
+    margin-top: 4px;
 }
 
 
@@ -78,6 +85,7 @@
         margin: 0 auto 0 0;
         padding-top: 10rem;
         width: 100vw;
+        padding-bottom: 4rem;
     }
 
     .headerContainer {
