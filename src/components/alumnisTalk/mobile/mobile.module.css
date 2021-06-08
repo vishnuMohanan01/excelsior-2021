@@ -1,24 +1,23 @@
 :root {
   --transition: all 0.1s linear;
 }
-.btn {
-  width: 30px;
-  height: 30px;
-}
+
 .section {
-  padding-top: 4rem;
+  margin: 0 2rem;
   position: relative;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/Alumni/Alumni’s\ Talk.svg");
+  background-image: url("../../../images/Alumni/MobileAlumni.svg");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
 }
 .sectionImage {
   position: absolute;
-  top: 70px;
+  top: 25px;
+  width: 70%;
   z-index: 10;
 }
 .image {
@@ -26,25 +25,8 @@
   height: 371px;
   border-radius: 10px;
 }
-.rightArrow,
-.leftArrow {
-  position: absolute;
-  top: 50%;
-  font-size: 3rem;
-  color: #000;
-  z-index: 100;
-  cursor: pointer;
-  user-select: none;
-}
-.rightArrow {
-  right: 350px;
-}
-.leftArrow {
-  left: 350px;
-}
 
 .sectionCenter {
-  margin: 0 auto;
   width: 100vw;
   height: 500px;
   max-width: 1500px;
@@ -52,7 +34,7 @@
   position: relative;
   display: flex;
   overflow: hidden;
-  background-image: url("../../images/Alumni/Device.svg");
+  background-image: url("../../../images/Alumni/aaka\ 1.svg");
   /* background-color: rgb(228, 166, 166); */
   object-fit: contain;
   background-repeat: no-repeat;
@@ -68,7 +50,6 @@
   opacity: 0;
   transition: var(--transition);
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
@@ -83,12 +64,17 @@
   transform: translateX(0.5%);
 }
 .image {
-  width: 83%;
-  height: 83%;
+  width: 191px;
+  min-height: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
+  margin: auto;
+  /* transform: translate(-5px, 40px) scaleY(1.1); */
+  transform: translate(-5px, 26px) scaleY(1.1);
 }
+
 @media only screen and (max-width: 768px) {
   .section {
-    display: none;
+    display: flex;
   }
 }
