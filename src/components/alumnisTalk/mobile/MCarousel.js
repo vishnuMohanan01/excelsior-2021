@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react"
-import { peopleDesktop } from "./constants/Data"
-import { Slider } from "./Slider"
-import * as styles from "./events.module.css"
-import Arrow from "../../images/arrow.svg"
-import SectionImage from "../../images/Alumni/SectionImage.svg"
+import { peopleMobile } from "../constants/Data"
+import { MSlider } from "./MSlider"
+import * as styles from "./mobile.module.css"
+import SectionImage from "../../../images/Alumni/SectionImage.svg"
 
-function Carousel() {
-  const state = useRef(peopleDesktop)
+function MCarousel() {
+  const state = useRef(peopleMobile)
   const [currentSlide, setCurrentSlide] = useState(0)
   const delay = useRef(4000)
   useEffect(() => {
@@ -31,12 +30,11 @@ function Carousel() {
   return (
     <section className={styles.section}>
       <img src={SectionImage} className={styles.sectionImage} />
-
       <div style={{ marginTop: "10rem" }} className={styles.sectionCenter}>
-        <Slider slides={state.current} currentSlide={currentSlide} />
+        <MSlider slides={state.current} currentSlide={currentSlide} />
       </div>
     </section>
   )
 }
 
-export default Carousel
+export default MCarousel
