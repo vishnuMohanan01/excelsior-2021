@@ -73,7 +73,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
                 <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>Rs 30/-</strong></div>
               </div>
             </div>
-            <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfYWly6dNYsa7ujEtobyft3jRZmrFRuDft8hRZ75juvfqEluQ/viewform?usp=sf_link"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
+            <a href={"https://docs.google.com/forms/d/e/1FAIpQLSeUxkXdXc6QvcuOY-hAaP1yHPeBuyNrAm13Dox46CExhuXbjQ/viewform?usp=sf_link"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
         </div>
         <img
