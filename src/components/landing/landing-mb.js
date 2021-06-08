@@ -26,7 +26,7 @@ const LandingMB = ({setSideNavBarStatus}) => {
         className={landingMBStyles.ex21}
       />
       <div className={landingMBStyles.regNowRect}>
-        <a href={"https://www.google.com"} target={"_blank"} className={landingMBStyles.regNowLink}>Register Now</a>
+        <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={"_blank"} className={landingMBStyles.regNowLink}>Register Now</a>
       </div>
       <img
         src={cube}

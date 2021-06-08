@@ -12,7 +12,7 @@ const Footer = () => {
     <div className={footerStyles.container}>
       <div className={`${footerStyles.division} ${footerStyles.one} ${footerStyles.desktopVersion}`}>
         <div className={footerStyles.divisionHead}>
-          <a href="" className={footerStyles.exLogoLink}>
+          <a href="/" className={footerStyles.exLogoLink}>
             <img
               src={exLogo}
               alt="ex"

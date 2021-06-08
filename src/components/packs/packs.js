@@ -45,7 +45,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
                 <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>229 /-</strong></div>
               </div>
             </div>
-            <a href={"https://www.google.com"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
+            <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
           <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
             <div className={packStyles.cardHead}>Essentials</div>
@@ -59,7 +59,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
                 <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>119 /-</strong></div>
               </div>
             </div>
-            <a href={"https://www.google.com"} target={"_blank"}  className={packStyles.registerButton}><span>Register Now</span></a>
+            <a href={"https://www.yepdesk.com/open-register/60be2d9d46e0fb0001d9e3f6"} target={"_blank"}  className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
           <div data-aos-once="true" data-aos="flip-down" data-aos-duration="1500" className={packStyles.card}>
             <div className={packStyles.cardHead}>Economy</div>
@@ -73,7 +73,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
                 <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>30/-</strong></div>
               </div>
             </div>
-            <a href={"https://www.google.com"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
+            <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfYWly6dNYsa7ujEtobyft3jRZmrFRuDft8hRZ75juvfqEluQ/viewform?usp=sf_link"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
           </div>
         </div>
         <img
