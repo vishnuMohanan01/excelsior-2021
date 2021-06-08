@@ -1,6 +1,5 @@
 import * as React from "react";
 import * as guestsStyles from './guests.module.css';
-import { StaticImage } from "gatsby-plugin-image"
 
 import guestBackImg from "../../images/guests-head.svg";
 import sureshImg from "../../images/guests/suresh.svg";
