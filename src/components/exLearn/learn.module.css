@@ -1,6 +1,6 @@
 .gridContainer {
     display: grid;
-    justify-content: center;
+    place-items: center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,13 +26,13 @@
     font-family: 'Poppins';
 }
 .card {
-    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
     margin: 1rem;
     text-align: left;
     width: 12rem;
-    border-style: solid;
-    border-color: #fff !important;
-    border-width: 2px;
     background-color: #292929;
     color:#fff;
 }
@@ -92,5 +92,14 @@
     .gridItem3 {
         grid-column-start: 2;
         grid-column-end: 3;
+    }
+
+    .card {
+        padding: 0px;
+        margin: 1rem;
+        text-align: left;
+        width: 13rem;
+        background-color: #292929;
+        color:#fff;
     }
 }

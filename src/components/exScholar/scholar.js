@@ -13,14 +13,14 @@ const Demo = () => {
             </p>
             <div className={styles.container}>
                     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
-                            <div className={styles.card} onMouseEnter={() => setIsFlipped(true)}>
+                            <div className={styles.card} onClick={() => setIsFlipped(true)} onMouseEnter={() => setIsFlipped(true)}>
                                 <h3>AI Workshop</h3>
                                 <a href={"https://www.google.com"} target={'_blank'} className={styles.btn}>
                                 <span className={styles.btnText}>Register Now</span>
                             </a>
                             </div>
 
-                            <div className={styles.card} onMouseLeave={() => setIsFlipped(false)}>
+                            <div className={styles.card} onClick={() => setIsFlipped(false)} onMouseLeave={() => setIsFlipped(false)}>
                                 <h3>BackSide</h3>
                                     <a href={"https://www.google.com"} target={'_blank'} className={styles.btn}>
                                     <span className={styles.btnText}>Register Now</span>
