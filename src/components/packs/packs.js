@@ -39,10 +39,10 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
               <div className={packStyles.cardBodyContent}>Brings to you a band of workshop, talks and goodies</div>
               <div className={packStyles.tagName}>Workshop + All talks + Goodies</div>
               <div className={packStyles.ratesContainer}>
-                <div className={packStyles.rate}>IEEE GECPKDian - <strong>100 /-</strong></div>
-                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>149 /-</strong></div>
-                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>149 /-</strong></div>
-                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>229 /-</strong></div>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 100 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>Rs 149 /-</strong></div>
+                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>Rs 149 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>Rs 229 /-</strong></div>
               </div>
             </div>
             <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
@@ -53,10 +53,10 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
               <div className={packStyles.cardBodyContent}>Awards you all talks</div>
               <div className={packStyles.tagName}>All Talks</div>
               <div className={packStyles.ratesContainer}>
-                <div className={packStyles.rate}>IEEE GECPKDian - <strong>59 /-</strong></div>
-                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>99 /-</strong></div>
-                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>99 /-</strong></div>
-                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>119 /-</strong></div>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 59 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>Rs 99 /-</strong></div>
+                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>Rs 99 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>Rs 119 /-</strong></div>
               </div>
             </div>
             <a href={"https://www.yepdesk.com/open-register/60be2d9d46e0fb0001d9e3f6"} target={"_blank"}  className={packStyles.registerButton}><span>Register Now</span></a>
@@ -67,10 +67,10 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
               <div className={packStyles.cardBodyContent}>Grab a talk of your passion</div>
               <div className={packStyles.tagName}>Pick any talks</div>
               <div className={packStyles.ratesContainer}>
-                <div className={packStyles.rate}>IEEE GECPKDian - <strong>20 /-</strong></div>
-                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>25 /-</strong></div>
-                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>25 /-</strong></div>
-                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>30/-</strong></div>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 20 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>Rs 25 /-</strong></div>
+                <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>Rs 25 /-</strong></div>
+                <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>Rs 30/-</strong></div>
               </div>
             </div>
             <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfYWly6dNYsa7ujEtobyft3jRZmrFRuDft8hRZ75juvfqEluQ/viewform?usp=sf_link"} target={"_blank"} className={packStyles.registerButton}><span>Register Now</span></a>
