@@ -4,10 +4,12 @@ import * as sponsorStyles from "./sponsors.module.css";
 
 import sponsorHeadImg from "../../images/sponsors-head.svg";
 import alumniSponsorImage from "../../images/sponsor-alumni-img.svg";
+import epoqImg from "../../images/epoq.png";
+
 import AOS from "aos"
 
 
-const Card = ({name, description, imageName}) => {
+const Card = ({name, description, imageName, imageClassName}) => {
 
   useEffect(() => {
     AOS.init();
@@ -15,20 +17,34 @@ const Card = ({name, description, imageName}) => {
 
   return (
     <div className={sponsorStyles.card}>
-      <img src={imageName} alt={"name"} className={sponsorStyles.sponsorImage} data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500" />
+      <img src={imageName} alt={"name"} className={imageClassName} data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500" />
       <div className={sponsorStyles.cardName}>{name}</div>
       <div className={sponsorStyles.cardDescription}>{description}</div>
     </div>
   );
 }
 
+const TitleType = () => {
+  return (
+    <div className={sponsorStyles.typeContainer}>
+      <div className={sponsorStyles.typeHead}>Title Sponsor</div>
+      <div className={sponsorStyles.cardContainer}>
+        <Card imageClassName={sponsorStyles.epoqImg} imageName={epoqImg}  name={""} description={""} />
+        {/*<Card name={"Full Name"} description={"Description for the sponsor"} />*/}
+        {/*<Card name={"Full Name"} description={"Description for the sponsor"} />*/}
+        {/*<Card name={"Full Name"} description={"Description for the sponsor"} />*/}
+      </div>
+    </div>
+  );
+};
 
-const SponsorType = () => {
+
+const FinanceType = () => {
   return (
     <div className={sponsorStyles.typeContainer}>
       <div className={sponsorStyles.typeHead}>Financial Sponsor</div>
       <div className={sponsorStyles.cardContainer}>
-        <Card imageName={alumniSponsorImage}  name={"Alumni GEC Palakkad"} description={"A token of love and appreciation"} />
+        <Card imageClassName={sponsorStyles.sponsorImage} imageName={alumniSponsorImage}  name={"Alumni GEC Palakkad"} description={"A token of love and appreciation"} />
         {/*<Card name={"Full Name"} description={"Description for the sponsor"} />*/}
         {/*<Card name={"Full Name"} description={"Description for the sponsor"} />*/}
         {/*<Card name={"Full Name"} description={"Description for the sponsor"} />*/}
@@ -52,7 +68,8 @@ const Sponsors = ({sponsorRef, setSideNavBarStatus}) => {
         />
         <div className={sponsorStyles.sponsorTextHead}>SPONSORS</div>
       </div>
-      <SponsorType />
+      <TitleType />
+      <FinanceType />
     </div>
   );
 };
