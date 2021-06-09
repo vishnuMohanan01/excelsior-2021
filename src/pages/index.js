@@ -37,6 +37,11 @@ const IndexPage = () => {
   const alumniRef = useRef(null);
   const faqRef = useRef(null);
   const packsRef = useRef(null);
+  const learnRef = useRef(null);
+  const psychRef = useRef(null);
+  const talkRef = useRef(null);
+  const demoRef = useRef(null);
+
 
   const scrollToRef = (ref) => {
     window.scrollTo({top: ref.current.offsetTop, behavior: 'smooth'});

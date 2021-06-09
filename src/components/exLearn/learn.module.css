@@ -79,12 +79,12 @@
         grid-column-start: 2;
         grid-column-end: 3;
     }
-    
+
     .gridItem2 {
         grid-column-start: 2;
         grid-column-end: 3;
     }
-    
+
     .gridItem3 {
         grid-column-start: 2;
         grid-column-end: 3;
@@ -97,5 +97,13 @@
         width: 17rem;
         background-color: #292929;
         color:#fff;
+    }
+
+    .gridItem1_1 {
+        grid-column: 1 / 1;
+    }
+
+    .gridItem2_1 {
+        grid-column: 1 / 1;
     }
 }
