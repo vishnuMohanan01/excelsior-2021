@@ -7,10 +7,8 @@ import LandingMB from "./landing-mb"
 import exBack from "../../images/ex-back-dt.svg";
 import excelsior21Img from "../../images/excelsior21-front-dt.svg";
 import ex21Img from "../../images/ex21.svg";
-import regNowBorder from "../../images/landing-reg-now-border.svg";
 import cube from "../../images/Point-line triangle cube.svg";
 import bigCube from "../../images/Big Point-line triangle cube.svg";
-import * as landingMBStyles from "./landingMB.module.css"
 
 
 
