@@ -24,7 +24,7 @@ const Talks = ({setSideNavBarStatus}) => {
     return (
         <div  onClick={() => {setSideNavBarStatus(false);}} data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  style={{marginBottom: "1.5rem"}}>
             <p className={styles.heading}>
-                <h2 className={styles.header}>Ex-Talks</h2>
+                <h2 className={styles.header}>EX-TALKS</h2>
             </p>
             <div className={styles.gridContainer}>
                 <div className={styles.gridItem1}>

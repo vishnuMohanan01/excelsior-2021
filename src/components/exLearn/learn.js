@@ -25,7 +25,7 @@ const Learn = ({learnRef, setSideNavBarStatus}) => {
     return (
         <div ref={learnRef} onClick={() => {setSideNavBarStatus(false);}} data-aos-once="true" data-aos="fade-up" data-aos-duration="800" style={{paddingBottom: "1.5rem", paddingTop:"4rem"}}>
             <p className={styles.heading}>
-                <h2 className={styles.header}>Ex-Learn</h2>
+                <h2 className={styles.header}>EX-LEARN</h2>
             </p>
             <div className={styles.gridContainer}>
                 <div className={styles.gridItem1}>

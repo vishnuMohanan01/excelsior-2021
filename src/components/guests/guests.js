@@ -5,6 +5,7 @@ import guestBackImg from "../../images/guests-head.svg";
 import sureshImg from "../../images/guests/suresh.svg";
 import vinodImg from "../../images/guests/vinod.svg";
 import mohammedImg from "../../images/guests/mohammed.svg";
+import sajiImg from "../../images/guests/sajikumar.svg";
 
 import { useEffect } from "react"
 import AOS from "aos"
@@ -74,18 +75,18 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
             <div className={guestsStyles.guestDesignation}>Chief Technology Advisor at Social Alpha</div>
           </div>
         </div>
-        {/*<div className={guestsStyles.card}>*/}
-        {/*  <img*/}
-        {/*    src={guest1}*/}
-        {/*    alt={"Guests Name"}*/}
-        {/*    className={guestsStyles.cardImage}*/}
-        {/*    data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"*/}
-        {/*  />*/}
-        {/*  <div className={guestsStyles.cardText}>*/}
-        {/*    <div className={guestsStyles.guestName}>Guest Name</div>*/}
-        {/*    <div className={guestsStyles.guestDesignation}>Designation of guest</div>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div className={guestsStyles.card}>
+          <img
+            src={sajiImg}
+            alt={"V S Sajikumar"}
+            className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>V S Sajikumar</div>
+            <div className={guestsStyles.guestDesignation}>National Award Winning Mentor, ICT Resource Person and Contemporary Artist</div>
+          </div>
+        </div>
       </div>
     </div>
   );

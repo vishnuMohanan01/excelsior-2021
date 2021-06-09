@@ -39,7 +39,7 @@ const Pack = ({packsRef, setSideNavBarStatus}) => {
               <div className={packStyles.cardBodyContent}>Brings to you a band of workshop, talks and goodies</div>
               <div className={packStyles.tagName}>Workshop + All talks + Goodies</div>
               <div className={packStyles.ratesContainer}>
-                <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 100 /-</strong></div>
+                <div className={packStyles.rate}>IEEE GECPKDian - <strong>Rs 75 /-</strong></div>
                 <div className={packStyles.rate}>Non IEEE GECPKDian - <strong>Rs 149 /-</strong></div>
                 <div className={packStyles.rate}>IEEE Non GECPKDian - <strong>Rs 149 /-</strong></div>
                 <div className={packStyles.rate}>Non IEEE Non GECPKDian - <strong>Rs 229 /-</strong></div>
