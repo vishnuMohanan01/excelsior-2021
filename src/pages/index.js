@@ -7,8 +7,6 @@ import Landing from "../components/landing"
 import About from "../components/about"
 import Guests from "../components/guests"
 import Contact from "../components/contact"
-import TechEvents from "../components/techEvents"
-import NonTechEvents from "../components/nonTechEvents"
 import Pack from "../components/packs"
 import { useEffect, useRef, useState } from "react"
 import Header from "../components/header"
@@ -20,7 +18,10 @@ import Events from "../components/alumnisTalk"
 import SideNavBar from "../components/sideNavBar"
 import Logos from "../components/logos"
 import Footer from "../components/footer"
-
+import Learn from "../components/exLearn"
+import Talks from "../components/exTalks"
+import Demo from "../components/exDemo"
+import Psych from "../components/exPsych"
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
@@ -95,8 +96,11 @@ const IndexPage = () => {
       <Quotes setSideNavBarStatus={setSideNavBarStatus} />
       <Pack packsRef={packsRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Schedule scheduleRef={scheduleRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <TechEvents workshopsRef={workshopsRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <NonTechEvents setSideNavBarStatus={setSideNavBarStatus} />
+      <Learn learnRef={learnRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Talks talksRef={talkRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Demo demoRef={demoRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Psych psychRef={psychRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />
