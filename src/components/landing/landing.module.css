@@ -25,13 +25,13 @@
 .excelsior21Image {
     position: absolute;
     top: 130px;
-    left: 590px;
+    left: 445px;
 }
 
 .ex21 {
     position: absolute;
     top: 160px;
-    left: 520px;
+    left: 375px;
 }
 
 .riseTextContainer {
@@ -42,7 +42,7 @@
     font-weight: 100;
     position: absolute;
     top: 350px;
-    left: 570px;
+    left: 405px;
 }
 .riseQuotes {
     display: none;
@@ -59,7 +59,7 @@
 
 .regNowRect {
     top: 430px;
-    left: 610px;
+    left: 465px;
     position: absolute;
     margin: 0 0 0 1.5rem;
     border: solid 2px transparent;

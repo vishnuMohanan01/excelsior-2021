@@ -36,7 +36,7 @@
 }
 
 .card {
-    /*border: 1px solid red;*/
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

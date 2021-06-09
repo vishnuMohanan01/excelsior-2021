@@ -41,6 +41,18 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
         {/*</div>*/}
         <div className={guestsStyles.card}>
           <img
+            src={sureshImg}
+            alt={"Suresh Nair"}
+            className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Suresh Nair</div>
+            <div className={guestsStyles.guestDesignation}>Chief Technology Advisor at Social Alpha</div>
+          </div>
+        </div>
+        <div className={guestsStyles.card}>
+          <img
             src={vinodImg}
             alt={"Vinod Narayan"}
             className={guestsStyles.cardImage}
@@ -61,18 +73,6 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Mohammed Hisamuddin</div>
             <div className={guestsStyles.guestDesignation}>CEO Entri App</div>
-          </div>
-        </div>
-        <div className={guestsStyles.card}>
-          <img
-            src={sureshImg}
-            alt={"Suresh Nair"}
-            className={guestsStyles.cardImage}
-            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
-          />
-          <div className={guestsStyles.cardText}>
-            <div className={guestsStyles.guestName}>Suresh Nair</div>
-            <div className={guestsStyles.guestDesignation}>Chief Technology Advisor at Social Alpha</div>
           </div>
         </div>
         <div className={guestsStyles.card}>
