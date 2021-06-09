@@ -99,7 +99,7 @@ const Footer = () => {
         <div className={footerStyles.societyContainer}>
           <div className={`${footerStyles.societyHead} ${footerStyles.sbContent}`}>Questions or Feedbacks ?<br />We'd love to hear from you.</div>
           <div className={`${footerStyles.socialIcons} ${footerStyles.sbIcons}`}>
-            <a href="" target={"_blank"}>
+            <a href="https://instagram.com/ieeesbgecpkd?igshid=czunhnx522u2" target={"_blank"}>
               <img
                 src={instaImgWhite}
                 alt="insta"

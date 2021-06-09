@@ -35,7 +35,7 @@ const Contact = ({contactRef, setSideNavBarStatus}) => {
               <div className={contactStyles.detailsNumber}>+91 9400 148 197</div>
             </div>
             <div className={contactStyles.detail}>
-              <div className={contactStyles.detailsName}>Reva S</div>
+              <div className={contactStyles.detailsName}>Reva Sabu</div>
               <div className={contactStyles.detailsNumber}>+91 9497 063 570</div>
             </div>
           </div>
