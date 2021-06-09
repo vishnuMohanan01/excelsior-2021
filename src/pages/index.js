@@ -37,10 +37,6 @@ const IndexPage = () => {
   const alumniRef = useRef(null);
   const faqRef = useRef(null);
   const packsRef = useRef(null);
-  const learnRef = useRef(null);
-  const psychRef = useRef(null);
-  const talkRef = useRef(null);
-  const demoRef = useRef(null);
 
 
   const scrollToRef = (ref) => {
@@ -101,11 +97,11 @@ const IndexPage = () => {
       <Quotes setSideNavBarStatus={setSideNavBarStatus} />
       <Pack packsRef={packsRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Schedule scheduleRef={scheduleRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <Learn learnRef={learnRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <Talks talksRef={talkRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <Demo demoRef={demoRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <Psych psychRef={psychRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Learn learnRef={workshopsRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Talks setSideNavBarStatus={setSideNavBarStatus} />
+      <Demo setSideNavBarStatus={setSideNavBarStatus} />
+      <Psych setSideNavBarStatus={setSideNavBarStatus} />
+      <Events setSideNavBarStatus={setSideNavBarStatus} />
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />

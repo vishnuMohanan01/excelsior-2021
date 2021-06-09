@@ -73,6 +73,10 @@
     font-weight: 400;
 }
 
+.cardImage {
+    /*max-width: 90%;*/
+}
+
 
 @media only screen and (max-width: 768px) {
     .gridItem1 {
@@ -90,7 +94,7 @@
         grid-column-end: 3;
     }
 
-    .card {
+    .card {;
         padding: 0px;
         margin: 1rem;
         text-align: left;
@@ -105,5 +109,9 @@
 
     .gridItem2_1 {
         grid-column: 1 / 1;
+    }
+
+    .cardImage {
+        /*max-width: 80%;*/
     }
 }
