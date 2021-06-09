@@ -38,7 +38,7 @@ const Psych = ({setSideNavBarStatus}) => {
                     </div>
                 </div>
 
-                <div className={styles.gridItem2_1}>
+                <div className={styles.gridItem2_1} data-aos-once="true" data-aos="fade-up" data-aos-duration="800">
                     <p className={styles.heading_1}>
                         <h2 className={styles.header_1}>EX-SCHOLAR</h2>
                     </p>

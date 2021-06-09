@@ -18,7 +18,7 @@ const Demo = ({setSideNavBarStatus}) => {
     });
 
     return (
-        <div  onClick={() => {setSideNavBarStatus(false);}} data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  style={{marginBottom: "1.5rem"}}>
+        <div onClick={() => {setSideNavBarStatus(false);}} data-aos-once="true" data-aos="fade-up" data-aos-duration="800"  style={{marginBottom: "1.5rem"}}>
             <div className={styles.gridContainer1}>
 
                 <div className={styles.gridItem1_1}>
@@ -38,7 +38,7 @@ const Demo = ({setSideNavBarStatus}) => {
                     </div>
                 </div>
 
-                <div className={styles.gridItem2_1}>
+                <div data-aos-once="true" data-aos="fade-up" data-aos-duration="800" className={styles.gridItem2_1}>
                     <p className={styles.heading_1}>
                         <h2 className={styles.header_1}>EX-CHORDS</h2>
                     </p>
