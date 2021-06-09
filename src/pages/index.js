@@ -101,7 +101,6 @@ const IndexPage = () => {
       <Talks setSideNavBarStatus={setSideNavBarStatus} />
       <Demo setSideNavBarStatus={setSideNavBarStatus} />
       <Psych setSideNavBarStatus={setSideNavBarStatus} />
-      <Events setSideNavBarStatus={setSideNavBarStatus} />
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <FAQ faqRef={faqRef} setSideNavBarStatus={setSideNavBarStatus} />
