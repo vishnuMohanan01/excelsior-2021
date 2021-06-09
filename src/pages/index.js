@@ -17,17 +17,11 @@ import FAQ from "../components/faq"
 import Events from "../components/alumnisTalk"
 import SideNavBar from "../components/sideNavBar"
 import Logos from "../components/logos"
-<<<<<<< HEAD
 import Footer from "../components/footer"
-
-=======
 import Learn from "../components/exLearn"
 import Talks from "../components/exTalks"
 import Demo from "../components/exDemo"
-import Chords from "../components/exChords"
 import Psych from "../components/exPsych"
-import Scholar from "../components/exScholar"
->>>>>>> mobile view updated
 
 const IndexPage = () => {
   const [tabSelected, setTabSelected] = useState("about");
@@ -102,12 +96,10 @@ const IndexPage = () => {
       <Quotes setSideNavBarStatus={setSideNavBarStatus} />
       <Pack packsRef={packsRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Schedule scheduleRef={scheduleRef} setSideNavBarStatus={setSideNavBarStatus} />
-      <Learn></Learn>
-      <Talks></Talks>
-      <Demo></Demo>
-      <Chords></Chords>
-      <Psych></Psych>
-      <Scholar></Scholar>
+      <Learn learnRef={learnRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Talks talksRef={talkRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Demo demoRef={demoRef} setSideNavBarStatus={setSideNavBarStatus} />
+      <Psych psychRef={psychRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Sponsors sponsorRef={sponsorRef} setSideNavBarStatus={setSideNavBarStatus} />
       <Events alumniRef={alumniRef} setSideNavBarStatus={setSideNavBarStatus} />

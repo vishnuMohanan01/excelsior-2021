@@ -1,13 +1,16 @@
 import React, {useState} from "react";
 import ReactCardFlip from "react-card-flip";
 
-import * as styles from "../exLearn/learn.module.css"
-import ai from "../../images/exEvents/1.jpg"
-import block from "../../images/exEvents/2.jpg"
-import circuit from "../../images/exEvents/3.jpg"
+import * as styles from "../exLearn/learn.module.css";
+import aiFront from "../../images/exEvents/1.jpg";
+import aiBack from "../../images/exEvents/1_2.jpg";
+import blockFront from "../../images/exEvents/2.jpg";
+import blockBack from "../../images/exEvents/2_2.jpg";
+import circuitFront from "../../images/exEvents/3.jpg";
+import circuitBack from "../../images/exEvents/3_2.jpg";
 
 
-const Learn = () => {
+const Learn = ({learnRef, setSideNavBarStatus}) => {
     const [isFlipped, setIsFlipped] = useState({
         isFlipped1: false,
         isFlipped2: false,
@@ -15,45 +18,51 @@ const Learn = () => {
     });
 
     return (
-        <div style={{marginBottom: "2rem", paddingTop:"4rem"}}>
+        <div style={{marginBottom: "1.5rem", paddingTop:"4rem"}}>
             <p className={styles.heading}>
                 <h2 className={styles.header}>Ex-Learn</h2>
             </p>
             <div className={styles.gridContainer}>
                 <div className={styles.gridItem1}>
-                    <ReactCardFlip isFlipped={isFlipped.isFlipped1} flipDirection="horizontal">
-                            <div className={styles.card} onClick={() => setIsFlipped({isFlipped1:true})} onMouseEnter={() => setIsFlipped({isFlipped1:true})}>
-                                <img src={ai}></img>
+                    <div className={styles.card}>
+                    <ReactCardFlip isFlipped={isFlipped.isFlipped1} flipDirection="horizontal"flipSpeedFrontToBack={1.2} flipSpeedBackToFront={1.2}>
+                            <div onClick={() => setIsFlipped({isFlipped1:true})} onMouseEnter={() => setIsFlipped({isFlipped1:true})}>
+                                <img src={aiFront}></img>
                             </div>
 
-                            <div className={styles.card} onClick={() => setIsFlipped({isFlipped1:false})} onMouseLeave={() => setIsFlipped({isFlipped1:false})}>
-                                <img src={ai}></img>
+                            <div onClick={() => setIsFlipped({isFlipped1:false})} onMouseLeave={() => setIsFlipped({isFlipped1:false})}>
+                                <img src={aiBack}></img>
                             </div>
                     </ReactCardFlip>
+                    </div>
                 </div>
 
                 <div className={styles.gridItem2}>
-                    <ReactCardFlip isFlipped={isFlipped.isFlipped2} flipDirection="horizontal">
-                            <div className={styles.card} onClick={() => setIsFlipped({isFlipped2:true})} onMouseEnter={() => setIsFlipped({isFlipped2:true})}>
-                                <img src={block}></img>
+                <div className={styles.card}>
+                    <ReactCardFlip isFlipped={isFlipped.isFlipped2} flipDirection="horizontal" flipSpeedFrontToBack={1.2} flipSpeedBackToFront={1.2}>
+                            <div onClick={() => setIsFlipped({isFlipped2:true})} onMouseEnter={() => setIsFlipped({isFlipped2:true})}>
+                                <img src={blockFront}></img>
                             </div>
 
-                            <div className={styles.card} onClick={() => setIsFlipped({isFlipped2:false})} onMouseLeave={() => setIsFlipped({isFlipped2:false})}>
-                                <img src={block}></img>
+                            <div onClick={() => setIsFlipped({isFlipped2:false})} onMouseLeave={() => setIsFlipped({isFlipped2:false})}>
+                                <img src={blockBack}></img>
                             </div>
                     </ReactCardFlip>
+                    </div>
                 </div>
 
                 <div className={styles.gridItem3}>
-                    <ReactCardFlip isFlipped={isFlipped.isFlipped3} flipDirection="horizontal">
-                            <div className={styles.card} onClick={() => setIsFlipped({isFlipped3:true})} onMouseEnter={() => setIsFlipped({isFlipped3:true})}>
-                                <img src={circuit}></img>
+                <div className={styles.card}>
+                    <ReactCardFlip isFlipped={isFlipped.isFlipped3} flipDirection="horizontal" flipSpeedFrontToBack={1.2} flipSpeedBackToFront={1.2}>
+                            <div onClick={() => setIsFlipped({isFlipped3:true})} onMouseEnter={() => setIsFlipped({isFlipped3:true})}>
+                                <img src={circuitFront}></img>
                             </div>
 
-                            <div className={styles.card} onClick={() => setIsFlipped({isFlipped3:false})} onMouseLeave={() => setIsFlipped({isFlipped3:false})}>
-                                <img src={circuit}></img>
+                            <div onClick={() => setIsFlipped({isFlipped3:false})} onMouseLeave={() => setIsFlipped({isFlipped3:false})}>
+                                <img src={circuitBack}></img>
                             </div>
                     </ReactCardFlip>
+                    </div>
                 </div>
             </div> 
         </div>

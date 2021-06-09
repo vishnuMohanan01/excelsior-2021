@@ -1,6 +1,6 @@
 .gridContainer {
     display: grid;
-    place-items: center;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -19,57 +19,53 @@
     grid-column-end: 4;
 }
 
+.gridContainer1 {
+    display: grid;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    grid-gap: 3rem;
+}
+
+.gridItem1_1 {
+    grid-column: 1 / 2;
+}
+
+.gridItem2_1 {
+    grid-column: 2 / 2;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins';
 }
+
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
     margin: 1rem;
     text-align: left;
-    width: 12rem;
-    background-color: #292929;
-    color:#fff;
-}
-
-.btn {
-
-      margin: auto;
-      display: block;
-      background-color: #fff;
-      color: #292929;
-      border-radius: 5px;
-      height:2rem;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none;
-      outline: none;
-      font-size: 0.8rem;
-      margin-top:12rem;
-}
-
-.btn:hover {
-    background-color: #dfdfdf;
-}
-
-.btnText {
-    line-height:2rem;
+    width: 16rem;                                   /*Change the size of all cards*/
+    border-color: #fff !important;
 }
 
 .heading {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 1rem !important;
 }
 
 .header {
     color: #fff;
     margin-bottom: 0rem;
+}
+
+.heading_1 {
+    text-align: center;
+    margin-bottom: 1rem !important;
+}
+
+.header_1 {
+    color: #fff;
+    margin-bottom: 1.5rem !important;
 }
 
 .subHeader {
@@ -98,7 +94,7 @@
         padding: 0px;
         margin: 1rem;
         text-align: left;
-        width: 13rem;
+        width: 17rem;
         background-color: #292929;
         color:#fff;
     }
