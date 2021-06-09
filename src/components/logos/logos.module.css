@@ -34,8 +34,9 @@
 }
 
 .ieee {
+    margin-top: 8px;
     z-index: 98;
-    /*max-width: 20%;*/
+    max-width: 25%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -68,5 +69,6 @@
 
     .ieee {
         max-width: 30%;
+
     }
 }
