@@ -43,8 +43,7 @@
 
 .card {
     margin: 2rem;
-    text-align: left;
-    width: 20rem;                                   /*Change the size of all cards*/
+    text-align: center;
     border-color: #fff !important;
 }
 
@@ -74,7 +73,7 @@
 }
 
 .cardImage {
-    width:100%;
+    width:80%;                  /*Change size of card - desktop*/           
 }
 
 
@@ -94,15 +93,6 @@
         grid-column-end: 3;
     }
 
-    .card {
-        padding: 0px;
-        margin: 1rem;
-        text-align: left;
-        width: 17rem;
-        background-color: #292929;
-        color:#fff;
-    }
-
     .gridItem1_1 {
         grid-column: 1 / 1;
     }
@@ -112,7 +102,6 @@
     }
 
     .cardImage {
-        height: 25rem;
-        /*width: 100%;*/
+        width: 78%;                 /*Change size of card - mobile*/
     }
 }
