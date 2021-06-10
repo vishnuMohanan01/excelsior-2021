@@ -74,7 +74,7 @@
 }
 
 .sponsorImage {
-    max-width: 75%;
+    /*max-width: 75%;*/
 }
 
 .cardName {
@@ -176,6 +176,6 @@
     }
 
     .epoqImg {
-        max-width: 60%;
+        /*max-width: 60%;*/
     }
 }

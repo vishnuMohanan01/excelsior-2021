@@ -4,7 +4,7 @@ import * as sponsorStyles from "./sponsors.module.css";
 
 import sponsorHeadImg from "../../images/sponsors-head.svg";
 import alumniSponsorImage from "../../images/sponsor-alumni-img.svg";
-import epoqImg from "../../images/epoq.svg";
+import epoqImg from "../../images/epoqSmall.png";
 
 import AOS from "aos"
 
