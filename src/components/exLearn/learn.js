@@ -31,7 +31,7 @@ const Learn = ({learnRef, setSideNavBarStatus}) => {
     };
 
     return (
-        <div style={{paddingTop: "8rem"}} onClick={() => setSideNavBarStatus(false)} data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={learnRef} className={styles.container}>
+        <div style={{paddingTop: "12rem"}} onClick={() => setSideNavBarStatus(false)} data-aos-once="true" data-aos="fade-up" data-aos-duration="800" ref={learnRef} className={styles.container}>
           <div className={styles.header}>EX-LEARN</div>
           <div className={styles.cardsContainer}>
             <ReactCardFlip containerStyle={flipContainerStyles} cardStyles={styles.card} isFlipped={isFlipped.isFlipped1} flipDirection="horizontal" flipSpeedFrontToBack={1.2} flipSpeedBackToFront={1.2} >
