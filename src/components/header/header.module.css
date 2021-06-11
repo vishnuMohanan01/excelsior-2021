@@ -43,6 +43,10 @@
     justify-content: center;
 }
 
+.desktopVersion {
+
+}
+
 @media only screen and (max-width: 768px) {
     .desktopVersion {
         display: none;
