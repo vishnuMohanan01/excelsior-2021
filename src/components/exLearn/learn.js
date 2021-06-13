@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react"
 import ReactCardFlip from "react-card-flip";
 
 import * as styles from "./learn.module.css";
-// import aiFront from "../../images/exEvents/1.jpg";
-// import aiBack from "../../images/exEvents/1_2.jpg";
-// import blockFront from "../../images/exEvents/2.jpg";
-// import blockBack from "../../images/exEvents/2_2.jpg";
-// import circuitFront from "../../images/exEvents/3.jpg";
-// import circuitBack from "../../images/exEvents/3_2.jpg";
+
 import AOS from "aos"
 import { StaticImage } from "gatsby-plugin-image"
 

@@ -4,6 +4,7 @@ import * as logoStyles from "./logos.module.css";
 import ieee from "../../images/logos/ieee.svg";
 import cs from "../../images/logos/cs.svg";
 import ias from "../../images/logos/ias.svg";
+import comSoc from "../../images/logos/comsoc.svg"
 import sb from "../../images/logos/sb.svg";
 import wie from "../../images/logos/wie.svg";
 import Aos from "aos";
@@ -30,6 +31,11 @@ const Logos = ({setSideNavBarStatus}) => {
         src={ias}
         alt={"IAS Logo"}
         className={logoStyles.ias}
+      />
+      <img
+        src={comSoc}
+        alt={"ComSoc Logo"}
+        className={logoStyles.comSoc}
       />
       <img
         src={wie}

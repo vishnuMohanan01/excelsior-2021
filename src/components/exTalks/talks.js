@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react"
 import ReactCardFlip from "react-card-flip";
 
 import * as styles from "../exLearn/learn.module.css"
-import t1Front from "../../images/exEvents/4.jpg"
-import t1Back from "../../images/exEvents/4_2.jpg"
-import t2Front from "../../images/exEvents/5.jpg";
-import t2Back from "../../images/exEvents/5_2.jpg";
-import t3Front from "../../images/exEvents/6.jpg";
-import t3Back from "../../images/exEvents/6_2.jpg";
+
 import AOS from "aos"
 import { StaticImage } from "gatsby-plugin-image"
 

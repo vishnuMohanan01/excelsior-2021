@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react"
 import ReactCardFlip from "react-card-flip";
 
 import * as styles from "./demo.module.css";
-import demoFront from "../../images/exEvents/7.jpg";
-import demoBack from "../../images/exEvents/7_2.jpg";
-import chordFront from "../../images/exEvents/8.jpg";
-import chordBack from "../../images/exEvents/8_2.jpg";
+
 import AOS from "aos"
 import { StaticImage } from "gatsby-plugin-image"
 

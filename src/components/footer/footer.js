@@ -67,6 +67,25 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className={footerStyles.societyContainer}>
+          <div className={footerStyles.societyHead}>Communications Society</div>
+          <div className={footerStyles.socialIcons}>
+            <a href="https://www.instagram.com/ieeecomsocgecpalakkad/" target={"_blank"}>
+              <img
+                src={instaImg}
+                alt="insta"
+                className={footerStyles.instaImg}
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/ieee-comsoc-sb-chapter-gec-palakkad" target={"_blank"}>
+              <img
+                src={linkedInImg}
+                alt="linkedIn"
+                className={footerStyles.linkedInImg}
+              />
+            </a>
+          </div>
+        </div>
       </div>
       <div className={`${footerStyles.division} ${footerStyles.three}`}>
         <div className={footerStyles.sbChapters}>

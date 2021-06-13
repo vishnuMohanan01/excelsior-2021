@@ -26,8 +26,14 @@
     /*max-width: 11%;*/
 }
 
+.comSoc {
+    margin-top: -12px;
+    max-width: 22%;
+    margin-right: 2rem;
+}
+
 .wie {
-    margin-top: -14px;
+    margin-top: -8px;
     z-index: 98;
     margin-right: 2rem;
     /*max-width: 11%;*/
@@ -60,6 +66,12 @@
         margin-top: -8px;
         margin-right: 0;
         max-width: 20%;
+    }
+
+    .comSoc {
+        /*max-width: 20%;*/
+        max-width: 30%;
+        margin-top: 0;
     }
 
     .wie {

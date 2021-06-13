@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react"
 import ReactCardFlip from "react-card-flip";
 
 import * as styles from "../exDemo/demo.module.css";
-// import psychFront from "../../images/exEvents/9.jpg";
-// import psychBack from "../../images/exEvents/9_2.jpg";
-// import scholarFront from "../../images/exEvents/10.jpg";
-// import scholarBack from "../../images/exEvents/10_2.jpg";
+
 import AOS from "aos"
 import { StaticImage } from "gatsby-plugin-image"
 
