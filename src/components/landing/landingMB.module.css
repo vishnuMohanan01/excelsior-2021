@@ -52,10 +52,15 @@
     transition: 0.2s all;
 }
 
-/*.regNowRect:active {*/
-/*    outline: none;*/
-/*    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);*/
-/*}*/
+.regNowRect:hover {
+    outline: none;
+    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
+}
+
+.regNowRect:active {
+    outline: none;
+    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
+}
 
 .regNowLink {
     font-weight: 500;

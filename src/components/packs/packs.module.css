@@ -147,18 +147,18 @@
     box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.redExclamation {
-    margin-left: 4px;
-    color: #f12424;
+/*.redExclamation {*/
+/*    margin-left: 4px;*/
+/*    color: #f12424;*/
+/*}*/
+
+.registerButton:hover {
+    background-color: #2f2b3b;
 }
 
-/*.registerButton:hover {*/
-/*    background-color: #2f2b3b;*/
-/*}*/
-
-/*.registerButton:active {*/
-/*    background-color: #2f2b3b;*/
-/*}*/
+.registerButton:active {
+    background-color: #2f2b3b;
+}
 
 .cubeSmall {
     position: absolute;
