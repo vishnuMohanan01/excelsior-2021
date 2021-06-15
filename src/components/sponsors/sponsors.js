@@ -5,6 +5,8 @@ import * as sponsorStyles from "./sponsors.module.css";
 import sponsorHeadImg from "../../images/sponsors-head.svg";
 import alumniSponsorImage from "../../images/sponsor-alumni-img.svg";
 import epoqImg from "../../images/epoqSmall.png";
+import iasImg from "../../images/iasImage.png";
+
 
 import AOS from "aos"
 
@@ -31,7 +33,7 @@ const CardTitle = ({imageName, description, websiteLink, imageClassName}) => {
   }, []);
 
   return (
-    <div className={sponsorStyles.card}>
+    <div className={`${sponsorStyles.card} ${sponsorStyles.titleCard}`}>
       <img src={imageName} alt={"name"} className={imageClassName} data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500" />
       <a href={websiteLink} target={"_blank"} className={sponsorStyles.cardTitleLink}>visit us</a>
     </div>
@@ -41,8 +43,9 @@ const CardTitle = ({imageName, description, websiteLink, imageClassName}) => {
 const TitleType = () => {
   return (
     <div className={sponsorStyles.typeContainer}>
-      <div className={sponsorStyles.typeHead}>Title Sponsor</div>
+      <div className={sponsorStyles.typeHead}>Title Sponsors</div>
       <div className={sponsorStyles.cardContainer}>
+        <CardTitle imageClassName={sponsorStyles.iasImg} imageName={iasImg}  websiteLink={"https://civils360.com/"} />
         <CardTitle imageClassName={sponsorStyles.epoqImg} imageName={epoqImg}  websiteLink={"https://epoqzero.com/"} />
       </div>
     </div>

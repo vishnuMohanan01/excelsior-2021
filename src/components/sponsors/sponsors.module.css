@@ -1,14 +1,18 @@
 .container {
-    margin: 33vh auto 0 5rem ;
+    /*margin: 33vh auto 0 5rem ;*/
+    margin: 33vh auto 0 0 ;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     padding-top: 2rem;
     padding-bottom: 5rem;
+    /*border: 1px solid #fff;*/
 }
 
 .headerContainer {
+    margin-left: 5rem;
+    /*border: 1px solid green;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -28,6 +32,7 @@
 }
 
 .typeContainer {
+    /*border: 1px solid red;*/
     margin: 8rem 0 3rem 0;
     width: 100%;
     display: flex;
@@ -44,6 +49,8 @@
 }
 
 .cardContainer {
+    height: 100%;
+    /*border: 1px solid green;*/
     margin: 4rem 0 0 0;
     width: 80%;
     display: flex;
@@ -53,6 +60,8 @@
 }
 
 .card {
+    align-self: center;
+    /*border: 1px solid yellow;*/
     margin-right: auto;
     margin-left: auto;
     height: 100%;
@@ -63,11 +72,18 @@
     align-items: center;
 }
 
+.iasImg {
+    /*border: 1px solid pink;*/
+    max-width: 40%;
+}
+
 .epoqImg {
-    max-width: 60%;
+    /*border: 1px solid orange;*/
+    max-width: 77%;
 }
 
 .cardTitleLink {
+    margin-top: auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 23px;
     color: #fff;
@@ -151,13 +167,20 @@
     }
 
     .card {
-        height: 10rem;
+        /*height: 10rem;*/
+        height: 100%;
         color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        /*border: 1px solid green;*/
+    }
+
+    .titleCard {
+        /*border: 1px solid red;*/
+        margin-bottom: 3rem;
     }
 
     .cardTitleLink {
@@ -173,6 +196,10 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 300;
         text-align: center;
+    }
+
+    .iasImg {
+        max-width: 60%;
     }
 
     .epoqImg {
