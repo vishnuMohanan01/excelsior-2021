@@ -34,8 +34,8 @@ const Landing = ({aboutRef, setSideNavBarStatus}) => {
             <div className={landingStyles.riseTextContainer}>
                 <span className={landingStyles.riseQuotes}>"</span><span className={landingStyles.riseText}>Rise above the rest</span><span className={landingStyles.riseQuotes}>"</span>
             </div>
-          <div className={landingStyles.regNowRect}>
-            <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={"_blank"} className={landingStyles.regNowLink}>Register Now</a>
+          <div className={landingStyles.regClosed}>
+            Registration Closed
           </div>
             <img
               src={cube}

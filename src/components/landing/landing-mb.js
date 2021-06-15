@@ -25,9 +25,12 @@ const LandingMB = ({setSideNavBarStatus}) => {
         alt="excelsior21"
         className={landingMBStyles.ex21}
       />
-      <div className={landingMBStyles.regNowRect}>
-        <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={"_blank"} className={landingMBStyles.regNowLink}>Register Now</a>
+      <div className={`${landingMBStyles.regNowRect} ${landingMBStyles.regClosed}`}>
+        Registration Closed
       </div>
+      {/*<div className={landingMBStyles.regNowRect}>*/}
+      {/*  <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={"_blank"} className={landingMBStyles.regNowLink}>Register Now</a>*/}
+      {/*</div>*/}
       <img
         src={cube}
         alt="excelsior21"

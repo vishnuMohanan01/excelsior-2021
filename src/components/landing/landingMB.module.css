@@ -39,7 +39,7 @@
     align-items: center;
     width: 40%;
     height: 2rem;
-    margin: 2rem 0 0 1.5rem;
+    margin: 2rem 0 0 1rem;
     border: solid 1px transparent;
     border-radius: 30px;
     background-image: linear-gradient(#292929, #292929), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
@@ -52,10 +52,10 @@
     transition: 0.2s all;
 }
 
-.regNowRect:active {
-    outline: none;
-    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
-}
+/*.regNowRect:active {*/
+/*    outline: none;*/
+/*    background-image: linear-gradient(#393939, #393939), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);*/
+/*}*/
 
 .regNowLink {
     font-weight: 500;
@@ -64,6 +64,12 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     outline: none;
+}
+
+.regClosed {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
 }
 
 .cube {
