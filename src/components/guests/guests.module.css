@@ -4,6 +4,7 @@
     justify-content: start;
     align-items: center;
     margin: 10rem auto 0 auto;
+    /*border: 1px solid pink;*/
 }
 
 .header {
@@ -26,6 +27,7 @@
 }
 
 .bodyContainer {
+    /*border: 1px solid #fff;*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,6 +38,7 @@
 }
 
 .card {
+    /*border: 1px solid red;*/
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -53,6 +56,7 @@
 }
 
 .cardText {
+    /*border: 1px solid green;*/
     text-align: center;
 }
 
@@ -102,18 +106,17 @@
     }
 
     .bodyContainer {
-
+        width: 90%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     .card {
-
-        width: 100%;
+        width: 85%;
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
@@ -124,8 +127,9 @@
     }
 
     .cardText {
+        margin-left: 4px;
         text-align: center;
-        width: 70%;
+        width: 100%;
     }
 
     .guestName {

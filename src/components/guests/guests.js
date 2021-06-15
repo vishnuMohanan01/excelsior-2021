@@ -2,6 +2,7 @@ import * as React from "react";
 import * as guestsStyles from './guests.module.css';
 
 import guestBackImg from "../../images/guests-head.svg";
+import lalithambikaImg from "../../images/guests/lallithambika.svg";
 import sureshImg from "../../images/guests/suresh.svg";
 import vinodImg from "../../images/guests/vinod.svg";
 import mohammedImg from "../../images/guests/mohammed.svg";
@@ -41,6 +42,18 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
         {/*</div>*/}
         <div className={guestsStyles.card}>
           <img
+            src={lalithambikaImg}
+            alt={"V R Lalithambika"}
+            className={guestsStyles.cardImage}
+            data-aos-once="true" data-aos="zoom-in" data-aos-duration="1500"
+          />
+          <div className={guestsStyles.cardText}>
+            <div className={guestsStyles.guestName}>Dr. V R Lalithambika</div>
+            <div className={guestsStyles.guestDesignation}>ISRO Scientist and Lead - Gaganyaan Mission</div>
+          </div>
+        </div>
+        <div className={guestsStyles.card}>
+          <img
             src={sureshImg}
             alt={"Suresh Nair"}
             className={guestsStyles.cardImage}
@@ -72,7 +85,7 @@ const Guests = ({guestsRef, setSideNavBarStatus}) => {
           />
           <div className={guestsStyles.cardText}>
             <div className={guestsStyles.guestName}>Mohammed Hisamuddin</div>
-            <div className={guestsStyles.guestDesignation}>CEO Entri App</div>
+            <div className={guestsStyles.guestDesignation}>Founder and CEO Entri App</div>
           </div>
         </div>
         <div className={guestsStyles.card}>
