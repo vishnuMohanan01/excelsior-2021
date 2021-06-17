@@ -59,19 +59,19 @@
 
 .regClosed {
     top: 430px;
-    left: 431px;
+    left: 450px;
     position: absolute;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 30px;
+    font-size: 27px;
     border: solid 2px transparent;
     border-radius: 30px;
     background-image: linear-gradient(#292929, #292929), linear-gradient(to right, #F62D2D 0%, #3F71FF 54.48%, #2EFFFF 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    width: 20rem;
-    height: 2.8rem;
-    line-height: 2.5rem;
+    width: 18rem;
+    height: 2.6rem;
+    line-height: 2.4rem;
     text-align: center;
     align-self: center;
 }

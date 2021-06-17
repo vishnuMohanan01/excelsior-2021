@@ -11,9 +11,9 @@ const HeaderMenu = ({tabSelected, setTabSelected, scrollToRef, aboutRef, contact
       <div onClick={() => {setTabSelected("about");scrollToRef(aboutRef);}} className={`${headerStyles.menuItem} noSelect`} style={(tabSelected === "about") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
         About
       </div>
-      <a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={'_blank'} onClick={() => {setTabSelected("registration");setTimeout(() => setTabSelected("about"), 1000)}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "registration") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
-        Registration
-      </a>
+      {/*<a href={"https://www.yepdesk.com/open-register/60bdbea546e0fb0001d784a9"} target={'_blank'} onClick={() => {setTabSelected("registration");setTimeout(() => setTabSelected("about"), 1000)}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "registration") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>*/}
+      {/*  Registration*/}
+      {/*</a>*/}
       <div onClick={() => {setTabSelected("sponsors");scrollToRef(sponsorRef);}} className={`${headerStyles.menuItem} noSelect`}  style={(tabSelected === "sponsors") ? {borderBottom: "3px solid #fff"} : {borderBottom: "none"}}>
         Sponsors
       </div>
